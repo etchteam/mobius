@@ -7,8 +7,8 @@ module.exports = {
   ],
   'addons': [
     '@storybook/preset-scss',
-    '@storybook/addon-links',
     '@storybook/addon-a11y',
+    '@storybook/addon-docs'
   ],
   'framework': '@storybook/react',
   staticDirs: [path.resolve(__dirname, '../src/assets')],
