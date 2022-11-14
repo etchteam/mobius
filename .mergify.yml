@@ -1,0 +1,36 @@
+pull_request_rules:
+  - name: Auto-squash dependabot PRs when all checks pass
+    conditions:
+      - and:
+        - author~=^dependabot(|-preview)\[bot\]$
+        - check-success=A11y tests
+        - check-success=Linting & Unit Tests
+        - check-success=SonarCloud Code Analysis
+        - label!=wontfix
+    actions:
+      merge:
+        method: squash
+    actions:
+      merge:
+        method: squash
+  - name: Auto-squash when all builds pass and the PR has been approved
+    conditions:
+      - and:
+        - check-success=A11y tests
+        - check-success=Linting & Unit Tests
+        - check-success=SonarCloud Code Analysis
+        - label!=wontfix
+        - "#approved-reviews-by>=1"
+    actions:
+      merge:
+        method: squash
+  - name: Ask an old fart to review the code
+    conditions:
+      - -closed
+    actions:
+      request_reviews:
+        users:
+          - JoshTheWanderer
+          - DanWebb
+          - gavmck
+        random_count: 1
