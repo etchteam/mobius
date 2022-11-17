@@ -4,8 +4,6 @@ import classNames from 'classnames';
 import { BaseInputProps } from 'lib/types';
 import { defaultInputProps } from 'lib/default-props';
 
-import Icon from 'components/content/Icon/Icon';
-
 import styles from './Input.module.scss';
 
 interface InputProps extends BaseInputProps {
@@ -15,8 +13,8 @@ interface InputProps extends BaseInputProps {
 
 const Input = React.forwardRef((
   {
-    icon,
     prefix,
+    suffix,
     disabled,
     touched,
     valid,
@@ -33,17 +31,17 @@ const Input = React.forwardRef((
       [styles[`input--${status}`]]: status,
     })}
   >
-    {icon && (
-      <div className={styles.input__icon}>
-        <Icon icon={icon} />
-      </div>
-    )}
-    {!icon && prefix && (
+    {prefix && (
       <div className={styles.input__prefix}>
         {prefix}
       </div>
     )}
     <input className={styles.input__input} disabled={disabled} {...props} ref={ref} />
+    {suffix && (
+      <div className={styles.input__suffix}>
+        {suffix}
+      </div>
+    )}
   </div>
 ));
 

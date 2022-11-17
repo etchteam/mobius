@@ -6,7 +6,17 @@ module.exports = {
     '../src/**/*.stories.@(js|jsx|ts|tsx)'
   ],
   'addons': [
-    '@storybook/preset-scss',
+    {
+      name: '@storybook/preset-scss',
+      options: {
+        cssLoaderOptions: {
+          modules: {
+            localIdentName: '[name]__[local]--[hash:base64:5]',
+          },
+
+        }
+      }
+    },
     '@storybook/addon-a11y',
     '@storybook/addon-docs'
   ],

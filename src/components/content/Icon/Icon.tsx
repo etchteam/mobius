@@ -7,6 +7,7 @@ interface IconProps {
   icon: string;
   color?: string;
   title?: string;
+  size?: string;
 }
 
 // Has to be a PureComponent so we get the shallow prop comparison
@@ -15,6 +16,7 @@ function Icon({
   icon,
   color,
   title,
+  size,
 }: IconProps) {
   const [IconSVG, setIcon] = useState(null);
   useEffect(() => {
@@ -30,6 +32,7 @@ function Icon({
     <span
       className={classNames(styles.icon, {
         [styles[`icon--${color}`]]: color,
+        [styles[`icon--${size}`]]: size,
       })}
       title={title}
       aria-hidden={!title}

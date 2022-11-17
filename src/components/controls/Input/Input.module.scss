@@ -7,19 +7,21 @@
 .input {
   @include forms.input;
 
-  &__icon {
-    align-self: center;
-    font-size: font.$size-xl;
-    margin-right: -(math.div(input.$padding-horizontal, 2));
-    padding: 0 0 0 math.div(input.$padding-horizontal, 2);
-  }
-
-  &__prefix {
+  &__prefix,
+  &__suffix {
     align-self: center;
     font-weight: font.$weight-bold;
     line-height: font.$line-height;
+  }
+
+  &__prefix {
     margin-right: -(math.div(input.$padding-horizontal, 2));
     padding: 0 0 0 input.$padding-horizontal;
+  }
+
+  &__suffix {
+    margin-left: -(math.div(input.$padding-horizontal, 2));
+    padding: 0 input.$padding-horizontal 0 0;
   }
 
   &__input {

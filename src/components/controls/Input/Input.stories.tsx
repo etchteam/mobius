@@ -1,6 +1,7 @@
 import React from 'react';
 import { Meta } from '@storybook/react/types-6-0';
 
+import Icon from '../../content/Icon/Icon';
 import Input from './Input';
 
 export default {
@@ -22,9 +23,17 @@ export default {
 } as Meta;
 
 export function Default() {
-  return <Input name="my-input" id="my-input" icon="search" />;
+  return <Input name="my-input" id="my-input" prefix={<Icon icon="search" size="lg" />} />;
 }
 
 export function Prefix() {
   return <Input name="my-input" id="my-input" prefix="£" />;
+}
+
+export function Suffix() {
+  return <Input name="my-input" id="my-input" suffix="kr" />;
+}
+
+export function SuffixAsIcon() {
+  return <Input name="my-input" id="my-input" suffix={<Icon icon="calendar" size="lg" />} />;
 }
