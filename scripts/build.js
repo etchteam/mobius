@@ -31,11 +31,11 @@ const inputOptions = {
 
 const outputOptions = [
   {
-    file: 'dist/mobius.cjs.js',
+    file: 'dist/index.cjs.js',
     format: 'cjs',
   },
   {
-    file: 'dist/mobius.esm.js',
+    file: 'dist/index.esm.js',
     format: 'esm',
   },
 ];
