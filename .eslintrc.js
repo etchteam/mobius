@@ -12,6 +12,9 @@ module.exports = {
     'jsx-a11y/label-has-associated-control': [2, {
       assert: 'either',
     }],
+    'import/no-extraneous-dependencies': ['error', {
+      devDependencies: true,
+    }],
   },
   settings: {
     'import/resolver': {
@@ -28,9 +31,6 @@ module.exports = {
   overrides: [{
     files: ['scripts/**/*.js', 'src/**/*.stories.tsx'],
     rules: {
-      'import/no-extraneous-dependencies': ['error', {
-        devDependencies: true,
-      }],
       'react/no-array-index-key': 0,
     },
   }, {

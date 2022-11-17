@@ -1,0 +1,25 @@
+@use '../../../styles/variables/color';
+@use '../../../styles/variables/spacing';
+
+.container {
+  align-items: center;
+  background: color.$white;
+  display: flex;
+
+  &__image {
+    margin-right: spacing.$horizontal;
+    padding: spacing.$vertical spacing.$horizontal;
+    width: calc(4em + #{spacing.$horizontal * 2});
+
+    svg {
+      display: block;
+      height: 4em;
+      margin: auto;
+      width: auto;
+    }
+  }
+
+  &__title {
+    font-size: 1rem;
+  }
+}

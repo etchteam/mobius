@@ -1,0 +1,18 @@
+@use '../../../styles/variables/container';
+@use '../../../styles/variables/color.scss';
+
+.container-svg {
+  &__lid,
+  &__body {
+    @each $colourName, $colour in container.$colours {
+      &.container-svg__lid--colour-#{$colourName},
+      &.container-svg__body--colour-#{$colourName} {
+        fill: $colour;
+      }
+    }
+
+    &.container-svg__body--colour-transparent {
+      stroke: color.$blue-darkest;
+    }
+  }
+}
