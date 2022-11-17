@@ -1,3 +1,10 @@
+### [2.0.2](https://github.com/etchteam/mobius/compare/v2.0.1...v2.0.2) (2022-11-17)
+
+
+### Bug Fixes
+
+* typings ([#25](https://github.com/etchteam/mobius/issues/25)) ([f4c8c6c](https://github.com/etchteam/mobius/commit/f4c8c6c4b8866c77a5eedb91e63dea5da46b5c32))
+
 ### [2.0.1](https://github.com/etchteam/mobius/compare/v2.0.0...v2.0.1) (2022-11-17)
 
 
