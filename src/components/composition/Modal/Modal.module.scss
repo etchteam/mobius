@@ -1,0 +1,64 @@
+@use 'sass:color' as sassColor;
+@use '../../../styles/variables/color';
+@use '../../../styles/variables/font';
+@use '../../../styles/variables/spacing';
+@use '../../../styles/variables/breakpoint';
+@use '../../../styles/mixins/screen-reader';
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+}
+
+.modal {
+  display: flex;
+  z-index: 9; // sit in front of most stuff, but not global alerts
+
+  &[aria-hidden='true'] {
+    display: none;
+  }
+
+  &,
+  &__overlay {
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+  }
+
+  &__overlay {
+    animation: fade-in 200ms both;
+    background-color: sassColor.scale(color.$blue-lightest, $alpha: -65%);
+  }
+
+  &__dialog {
+    animation: fade-in 500ms 50ms both;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    max-height: 100vh;
+    max-width: 100%;
+    overflow-y: auto;
+    position: relative;
+    z-index: 9;
+
+    @each $key, $bp in breakpoint.$map {
+      &--size-#{$key} {
+        width: $bp;
+      }
+    }
+  
+    &--auto {
+      width: auto;
+    }
+  }
+
+  &__title {
+    @include screen-reader.sr-only;
+  }
+
+  &__inner {
+    padding: spacing.$vertical-fluid-sm spacing.$horizontal-fluid-sm;
+  }
+}
