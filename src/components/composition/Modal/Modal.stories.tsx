@@ -22,7 +22,7 @@ export const Default = () => {
 
   return (
     <>
-      <Button type="secondary" onClick={() => modalRef.current?.show()}>
+      <Button type="primary" onClick={() => modalRef.current?.show()}>
         Open the modal
       </Button>
 

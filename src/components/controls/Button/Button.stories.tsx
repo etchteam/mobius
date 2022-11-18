@@ -12,7 +12,7 @@ export default {
       config: {
         rules: [
           {
-            // @TODO fix default button colour contrast
+            // @TODO fix default and secondary button colour contrast
             id: 'color-contrast',
             enabled: false,
           },
