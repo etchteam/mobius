@@ -11,19 +11,6 @@ import Alert from './Alert';
 export default {
   title: 'Canvas/Alert',
   component: Alert,
-  parameters: {
-    a11y: {
-      config: {
-        rules: [
-          {
-            // Temporary disable
-            id: 'color-contrast',
-            enabled: false,
-          },
-        ],
-      },
-    },
-  },
 } as Meta;
 
 export function Default() {

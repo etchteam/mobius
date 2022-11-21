@@ -11,7 +11,6 @@ export default {
       config: {
         rules: [
           {
-            // Temporary disable
             id: 'color-contrast',
             enabled: false,
           },

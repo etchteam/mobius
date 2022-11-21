@@ -14,17 +14,6 @@ export default {
   component: Section,
   parameters: {
     layout: 'fullscreen',
-    a11y: {
-      config: {
-        rules: [
-          {
-            // Temporary disable
-            id: 'color-contrast',
-            enabled: false,
-          },
-        ],
-      },
-    },
   },
 } as Meta;
 

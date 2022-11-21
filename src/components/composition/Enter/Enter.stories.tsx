@@ -11,19 +11,6 @@ import Enter from './Enter';
 export default {
   title: 'Composition/Enter',
   component: Enter,
-  parameters: {
-    a11y: {
-      config: {
-        rules: [
-          {
-            // Temporary disable
-            id: 'color-contrast',
-            enabled: false,
-          },
-        ],
-      },
-    },
-  },
 } as ComponentMeta<typeof Enter>;
 
 const Template: ComponentStory<typeof Enter> = (args) => {
