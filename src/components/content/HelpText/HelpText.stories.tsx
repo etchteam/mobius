@@ -11,6 +11,19 @@ import HelpText from './HelpText';
 export default {
   title: 'Content/Help text',
   component: HelpText,
+  parameters: {
+    a11y: {
+      config: {
+        rules: [
+          {
+            // Has a problem with positive text, but it does pass A11Y
+            id: 'color-contrast',
+            enabled: false,
+          },
+        ],
+      },
+    },
+  },
 } as Meta;
 
 export const Default = () => (

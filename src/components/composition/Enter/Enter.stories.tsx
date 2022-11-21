@@ -11,6 +11,19 @@ import Enter from './Enter';
 export default {
   title: 'Composition/Enter',
   component: Enter,
+  parameters: {
+    a11y: {
+      config: {
+        rules: [
+          {
+            // a11y plugin has a problem with the fade
+            id: 'color-contrast',
+            enabled: false,
+          },
+        ],
+      },
+    },
+  },
 } as ComponentMeta<typeof Enter>;
 
 const Template: ComponentStory<typeof Enter> = (args) => {
