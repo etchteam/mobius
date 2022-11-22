@@ -13,6 +13,19 @@ import Button from 'components/controls/Button/Button';
 
 export default {
   title: 'Docs/Examples',
+  parameters: {
+    a11y: {
+      config: {
+        rules: [
+          {
+            // Temporary disable
+            id: 'color-contrast',
+            enabled: false,
+          },
+        ],
+      },
+    },
+  },
 };
 
 export function Form() {
