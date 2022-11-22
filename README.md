@@ -18,6 +18,12 @@ Install the global CSS in your main app file;
 import '@etchteam/mobius/src/styles/main.scss';
 ```
 
+Import a theme file
+
+```js
+import '@etchteam/mobius/src/styles/themes/default/main.scss';
+```
+
 ```jsx
 import React from 'react';
 import { Button } from '@etchteam/mobius';
