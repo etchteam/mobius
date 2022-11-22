@@ -1,23 +1,21 @@
+import cssVariablesTheme from '@etchteam/storybook-addon-css-variables-theme'
+
 import '../src/styles/main.scss';
 
+import base from '!!style-loader?injectType=lazyStyleTag!css-loader!sass-loader!../src/styles/themes/default/main.scss'
+import tbor from '!!style-loader?injectType=lazyStyleTag!css-loader!sass-loader!../src/styles/themes/business-of-recycling/main.scss'
+
 export const parameters = {
-  actions: { argTypesRegex: "^on[A-Z].*" },
   viewMode: 'docs',
-  backgrounds: {
-    default: 'medium',
-    values: [
-      {
-        name: 'light',
-        value: '#ffffff',
-      },
-      {
-        name: 'medium',
-        value: '#eceff2',
-      },
-      {
-        name: 'dark',
-        value: '#05224b',
-      },
-    ],
-  },
+  cssVariables: {
+    files: {
+      'Default': base,
+      'Business of recycling': tbor,
+    },
+    defaultTheme: 'Default',
+  }
 }
+
+export const decorators = [
+  cssVariablesTheme,
+]

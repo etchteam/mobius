@@ -67,12 +67,13 @@
 
   &--clickable {
     cursor: pointer;
+    font-weight: 400;
     text-decoration: none;
     transition: border-color transition.$duration transition.$timing;
 
-    &:hover,
-    &:focus {
+    &:hover {
       border-color: skin.$link-color;
+      text-decoration: none;
     }
   }
 
@@ -81,8 +82,8 @@
   }
 
   &--control {
-    background: input.$background;
-    border: 1px solid input.$border;
+    background: var(--input-background);
+    border: 1px solid var(--input-border);
     border-radius: input.$border-radius;
   }
 

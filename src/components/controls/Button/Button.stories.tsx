@@ -42,6 +42,36 @@ export function Types() {
   );
 }
 
+export function Disabled() {
+  return (
+    <>
+      <Button disabled>Button</Button>
+      {' '}
+      <Button type="primary" disabled>Button</Button>
+      {' '}
+      <Button type="secondary" disabled>Button</Button>
+      {' '}
+      <Button type="positive" disabled>Button</Button>
+      {' '}
+      <Button type="negative" disabled>Button</Button>
+      {' '}
+      <Button type="primary" icon disabled>
+        <Icon icon="edit" title="Moderate" />
+      </Button>
+    </>
+  );
+}
+
+export function Sizes() {
+  return (
+    <>
+      <Button size="small">Button</Button>
+      {' '}
+      <Button>Button</Button>
+    </>
+  );
+}
+
 export function Block() {
   return (
     <>

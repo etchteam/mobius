@@ -1,5 +1,6 @@
 @use '../variables/font';
 @use '../variables/color';
+@use '../variables/skin';
 
 * {
   box-sizing: border-box;
@@ -11,8 +12,8 @@ body {
 }
 
 body {
-  background: color.$background;
-  color: color.$body;
+  background: skin.$background-muted;
+  color: skin.$color;
   margin: 0;
   min-width: 20em;
   padding: 0;
