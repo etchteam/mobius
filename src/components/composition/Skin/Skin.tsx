@@ -1,11 +1,8 @@
 import React from 'react';
 import classNames from 'classnames';
 
-import styles from './Skin.module.scss';
-
 export const skins = [
   'light',
-  'medium',
   'dark',
 ];
 
@@ -16,6 +13,9 @@ export const emphasisSkins = [
   'attention',
 ];
 
+// This component uses non-module CSS
+// so that we can define skins at the
+// brand/theme level.
 export default function Skin({
   skin,
   children,
@@ -25,8 +25,8 @@ export default function Skin({
 }) {
   return (
     <div
-      className={classNames(styles.skin, {
-        [styles[`skin--${skin}`]]: skin,
+      className={classNames('skin', {
+        [`skin--${skin}`]: skin,
       })}
     >
       {children}

@@ -11,6 +11,7 @@ interface ButtonProps {
   type?: 'primary' | 'secondary' | 'positive' | 'negative';
   icon?: boolean;
   block?: boolean | 'mobile';
+  size?: string;
   [x: string]: any;
 }
 
@@ -22,6 +23,7 @@ const Button = React.forwardRef(({
   href,
   icon,
   block,
+  size,
   ...props
 }: ButtonProps, ref: any) => {
   const baseProps = {
@@ -31,6 +33,7 @@ const Button = React.forwardRef(({
       [styles['button--block']]: block === true,
       [styles['button--block-mobile']]: block === 'mobile',
       [styles['button--icon']]: icon,
+      [styles[`button--${size}`]]: !!size,
     }),
     disabled: loading || undefined,
     ref,

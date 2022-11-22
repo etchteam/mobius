@@ -17,6 +17,12 @@
     fill: currentColor;
   }
 
+  @each $key, $color in color.$colors {
+    &--#{$key} {
+      color: $color;
+    }
+  }
+
   &--accent {
     color: color.$yellow;
   }

@@ -1,33 +1,23 @@
 @use '../variables/color';
 
 :root {
-  --skin-background: #{color.$white};
-  --skin-background-muted: #{color.$blue-lightest};
-  --skin-border-color: #{color.$blue-light};
-  --skin-color: #{color.$body};
-  --skin-heading-color: #{color.$blue-darkest};
-  --skin-link-color: #{color.$link};
-
   --skin-background-light: #{color.$white};
   --skin-background-muted-light: #{color.$blue-lightest};
   --skin-border-color-light: #{color.$blue-light};
   --skin-color-light: #{color.$body};
   --skin-heading-color-light: #{color.$blue-darkest};
   --skin-link-color-light: #{color.$link};
-
-  --skin-background-medium: #{color.$grey-light};
-  --skin-background-muted-medium: #{color.$blue-lightest};
-  --skin-border-color-medium: #{color.$blue-light};
-  --skin-color-medium: #{color.$body};
-  --skin-heading-color-medium: #{color.$blue-darkest};
-  --skin-link-color-medium: #{color.$link};
+  --skin-link-text-decoration-light: none;
+  --skin-link-text-decoration-hover-light: underline;
 
   --skin-background-dark: #{color.$blue-darkest};
-  --skin-background-muted-dark: #{color.$blue-lightest};
-  --skin-border-color-dark: #{color.$blue-light};
+  --skin-background-muted-dark: #{color.$blue-darkest};
+  --skin-border-color-dark: transparent;
   --skin-color-dark: #{color.$white};
   --skin-heading-color-dark: #{color.$white};
   --skin-link-color-dark: #{color.$white};
+  --skin-link-text-decoration-dark: underline;
+  --skin-link-text-decoration-hover-dark: underline;
 
   --skin-background-neutral: #{color.$blue};
   --skin-background-muted-neutral: #{color.$blue-lightest};
@@ -35,6 +25,8 @@
   --skin-color-neutral: #{color.$white};
   --skin-heading-color-neutral: #{color.$white};
   --skin-link-color-neutral: #{color.$white};
+  --skin-link-text-decoration-neutral: underline;
+  --skin-link-text-decoration-hover-neutral: underline;
 
   --skin-background-positive: #{color.$green};
   --skin-background-muted-positive: #{color.$blue-lightest};
@@ -42,6 +34,8 @@
   --skin-color-positive: #{color.$white};
   --skin-heading-color-positive: #{color.$white};
   --skin-link-color-positive: #{color.$white};
+  --skin-link-text-decoration-positive: underline;
+  --skin-link-text-decoration-hover-positive: underline;
 
   --skin-background-negative: #{color.$maroon};
   --skin-background-muted-negative: #{color.$blue-lightest};
@@ -49,6 +43,8 @@
   --skin-color-negative: #{color.$white};
   --skin-heading-color-negative: #{color.$white};
   --skin-link-color-negative: #{color.$white};
+  --skin-link-text-decoration-negative: underline;
+  --skin-link-text-decoration-hover-negative: underline;
 
   --skin-background-attention: #{color.$yellow};
   --skin-background-muted-attention: #{color.$blue-lightest};
@@ -56,4 +52,15 @@
   --skin-color-attention: #{color.$blue-darkest};
   --skin-heading-color-attention: #{color.$blue-darkest};
   --skin-link-color-attention: #{color.$blue};
+  --skin-linktext-decoration-attention: underline;
+  --skin-linktext-decoration-hover-attention: underline;
+
+  --skin-background: var(--skin-background-light);
+  --skin-background-muted: var(--skin-background-muted-light);
+  --skin-border-color: var(--skin-border-color-light);
+  --skin-color: var(--skin-color-light);
+  --skin-heading-color: var(--skin-heading-color-light);
+  --skin-link-color: var(--skin-link-color-light);
+  --skin-link-text-decoration: var(--skin-link-text-decoration-light);
+  --skin-link-text-decoration-hover: var(--skin-link-text-decoration-hover-light);
 }

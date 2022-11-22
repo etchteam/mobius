@@ -5,13 +5,13 @@
 
 @mixin base {
   appearance: none;
-  border: 1px solid transparent;
+  border: var(--button-border-width) solid transparent;
   cursor: pointer;
   display: inline-block;
   line-height: 1.75;
   min-height: spacing.$thumb;
-  min-width: 7.5em;
-  padding: spacing.$vertical-sm spacing.$horizontal;
+  min-width: 6.5em;
+  padding: calc(#{spacing.$vertical-sm} - var(--button-border-width)) spacing.$horizontal;
   text-align: center;
   text-decoration: none;
   transition: opacity transition.$duration transition.$timing,
@@ -22,9 +22,9 @@
 
 @mixin default {
   @include base;
-  background: color.$white;
-  border-radius: 0.25em;
-  color: color.$blue;
+  background: var(--button-background);
+  border-radius: var(--button-border-radius);
+  color: var(--button-color);
   cursor: pointer;
   font-weight: font.$weight-bold;
 }

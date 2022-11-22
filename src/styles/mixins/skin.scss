@@ -1,0 +1,23 @@
+@mixin skin($type) {
+  --skin-background: var(--skin-background-#{$type});
+  --skin-background-muted: var(--skin-background-muted-#{$type});
+  --skin-border-color: var(--skin-border-color-#{$type});
+  --skin-color: var(--skin-color-#{$type});
+  --skin-heading-color: var(--skin-heading-color-#{$type});
+  --skin-link-color: var(--skin-link-color-#{$type});
+  --skin-link-text-decoration: var(--skin-link-text-decoration-#{$type});
+  --skin-link-text-decoration-hover: var(--skin-link-text-decoration-hover-#{$type});
+}
+
+@mixin create-skins($skins) {
+  .skin {
+    // Don't affect grid/flex layout
+    display: contets;
+
+    @each $skin in $skins {
+      &--#{$skin} {
+        @include skin($skin);
+      }
+    }
+  }
+}

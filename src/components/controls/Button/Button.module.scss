@@ -6,19 +6,9 @@
 @use '../../../styles/mixins/button';
 
 .button {
+  $types: primary, secondary, positive, negative;
   @include button.default;
-
-  border-color: rgba(0, 0, 0, 0.1);
-
-  &:hover,
-  &:focus,
-  &:active {
-    border-color: rgba(0, 0, 0, 0.2);
-  }
-
-  &:focus {
-    outline: none;
-  }
+  border-color: var(--button-border-color);
 
   &:active {
     position: relative;
@@ -27,44 +17,9 @@
 
   &--loading,
   &[disabled] {
+    filter: grayscale(0.5);
     opacity: 0.75;
     pointer-events: none;
-  }
-
-  &--primary {
-    background: color.$yellow;
-    color: color.$blue-darkest;
-
-    &[disabled] {
-      background: sassColor.scale(color.$yellow, $alpha: -40%);
-    }
-  }
-
-  &--secondary {
-    background: color.$blue;
-    color: color.$white;
-
-    &[disabled] {
-      background: sassColor.scale(color.$blue, $alpha: -40%);
-    }
-  }
-
-  &--positive {
-    background: color.$positive;
-    color: color.$white;
-
-    &[disabled] {
-      background: sassColor.scale(color.$positive, $alpha: -40%);
-    }
-  }
-
-  &--negative {
-    background: color.$negative;
-    color: color.$white;
-
-    &[disabled] {
-      background: sassColor.scale(color.$negative, $alpha: -40%);
-    }
   }
 
   &--icon {
@@ -86,6 +41,20 @@
         display: inline-block;
         width: auto;
       }
+    }
+  }
+
+  &--small {
+    min-height: 2.25rem;
+    min-width: 5.5rem;
+    padding: calc(#{spacing.$vertical-xs} - var(--button-border-width)) spacing.$horizontal-sm;
+  }
+
+  @each $type in $types {
+    &--#{$type} {
+      background: var(--button-background-#{$type});
+      border-color: var(--button-border-color-#{$type});
+      color: var(--button-color-#{$type});
     }
   }
 }

@@ -52,11 +52,11 @@
 
       &:hover,
       &:focus-within {
-        border-color: input.$border-hover;
+        border-color: var(--input-border-hover);
       }
 
       &:focus-within {
-        background: color.$white;
+        background: var(--input-background-focus);
       }
     }
 
