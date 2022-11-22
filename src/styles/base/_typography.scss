@@ -4,6 +4,10 @@
 @use '../variables/skin';
 @use '../mixins/title';
 
+:root {
+  --link-font-weight: inherit;
+}
+
 body {
   font-family: font.$family;
   font-size: font.$size-base;
@@ -47,7 +51,12 @@ p {
 
 a {
   color: skin.$link-color;
-  text-decoration: none;
+  font-weight: var(--link-font-weight);
+  text-decoration: skin.$link-text-decoration;
+
+  &:hover {
+    text-decoration: skin.$link-text-decoration-hover;
+  }
 }
 
 b,

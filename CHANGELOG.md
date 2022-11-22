@@ -1,3 +1,10 @@
+### [2.0.3](https://github.com/etchteam/mobius/compare/v2.0.2...v2.0.3) (2022-11-19)
+
+
+### Bug Fixes
+
+* use rems for breakpoints ([#29](https://github.com/etchteam/mobius/issues/29)) ([6ac48c3](https://github.com/etchteam/mobius/commit/6ac48c3192a2468cfb65a4058f69fcad0ad13aaa))
+
 ### [2.0.2](https://github.com/etchteam/mobius/compare/v2.0.1...v2.0.2) (2022-11-17)
 
 

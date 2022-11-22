@@ -1,3 +1,14 @@
+@use '../variables/color';
+@use '../variables/input';
+
+:root {
+  --input-background: #{color.$blue-lightest};
+  --input-background-focus: #{color.$white};
+  --input-border: #{color.$blue-light};
+  --input-border-hover: var(--link-color);
+  --input-color: var(--skin-color-light);
+}
+
 fieldset {
   border: 0;
   margin: 0;

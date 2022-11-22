@@ -18,7 +18,8 @@ module.exports = {
       }
     },
     '@storybook/addon-a11y',
-    '@storybook/addon-docs'
+    '@storybook/addon-docs',
+    '@etchteam/storybook-addon-css-variables-theme',
   ],
   'framework': '@storybook/react',
   staticDirs: [path.resolve(__dirname, '../src/assets')],

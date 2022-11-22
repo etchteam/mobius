@@ -1,0 +1,24 @@
+:root {
+  --button-border-radius: 0.25rem;
+  --button-border-width: 1px;
+
+  --button-background: #{color.$white};
+  --button-border-color: rgba(0, 0, 0, 0.1);
+  --button-color: #{color.$blue};
+
+  --button-background-primary: #{color.$yellow};
+  --button-border-color-primary: rgba(0, 0, 0, 0.1);
+  --button-color-primary: #{color.$blue-darkest};
+
+  --button-background-secondary: #{color.$blue};
+  --button-border-color-secondary: rgba(0, 0, 0, 0.1);
+  --button-color-secondary: #{color.$white};
+
+  --button-background-positive: #{color.$positive};
+  --button-border-color-positive: rgba(0, 0, 0, 0.1);
+  --button-color-positive: #{color.$white};
+
+  --button-background-negative: #{color.$negative};
+  --button-border-color-negative: rgba(0, 0, 0, 0.1);
+  --button-color-negative: #{color.$white};
+}

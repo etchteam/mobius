@@ -1,12 +1,11 @@
-@use './color';
 @use './spacing';
 
-$background: color.$blue-lightest;
-$border: color.$blue-light;
-$border-hover: color.$link;
+$background: var(--input-background);
+$border: var(--input-border);
+$border-hover: var(--input-border-hover);
 $border-radius: 0.25em;
 
-$color: color.$body;
+$color: var(--input-color);
 
 $padding-vertical: spacing.$vertical-sm;
 $padding-horizontal: spacing.$horizontal;
