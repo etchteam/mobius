@@ -16,7 +16,7 @@ export default {
       config: {
         rules: [
           {
-            // Temporary disable
+            // Has a problem with positive text, but it does pass A11Y
             id: 'color-contrast',
             enabled: false,
           },

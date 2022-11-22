@@ -7,19 +7,6 @@ import Button from './Button';
 export default {
   title: 'Controls/Button',
   component: Button,
-  parameters: {
-    a11y: {
-      config: {
-        rules: [
-          {
-            // @TODO fix default and secondary button colour contrast
-            id: 'color-contrast',
-            enabled: false,
-          },
-        ],
-      },
-    },
-  },
 } as Meta;
 
 export function Types() {

@@ -16,7 +16,7 @@ export default {
       config: {
         rules: [
           {
-            // Temporary disable
+            // a11y plugin has a problem with the fade
             id: 'color-contrast',
             enabled: false,
           },
