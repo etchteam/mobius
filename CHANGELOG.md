@@ -1,3 +1,14 @@
+## [3.0.0](https://github.com/etchteam/mobius/compare/v2.0.3...v3.0.0) (2022-11-23)
+
+
+### ⚠ BREAKING CHANGES
+
+* tbor theme
+
+### Features
+
+* tbor theme ([98bf73c](https://github.com/etchteam/mobius/commit/98bf73ca5c6356de5d7f9161af4947e791d8cee5))
+
 ### [2.0.3](https://github.com/etchteam/mobius/compare/v2.0.2...v2.0.3) (2022-11-19)
 
 
