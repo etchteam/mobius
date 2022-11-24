@@ -1,3 +1,10 @@
+### [3.0.1](https://github.com/etchteam/mobius/compare/v3.0.0...v3.0.1) (2022-11-24)
+
+
+### Bug Fixes
+
+* skin display ([cba1a93](https://github.com/etchteam/mobius/commit/cba1a9345ecc8c642eacbe1557ecb2eb22bcbec6))
+
 ## [3.0.0](https://github.com/etchteam/mobius/compare/v2.0.3...v3.0.0) (2022-11-23)
 
 
