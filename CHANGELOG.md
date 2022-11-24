@@ -1,3 +1,10 @@
+### [4.3.1](https://github.com/etchteam/mobius/compare/v4.3.0...v4.3.1) (2022-11-24)
+
+
+### Bug Fixes
+
+* add breakpoint namespace ([abda30e](https://github.com/etchteam/mobius/commit/abda30e29b0483b6d78116bd8460737cf4db9af5))
+
 ## [4.3.0](https://github.com/etchteam/mobius/compare/v4.2.0...v4.3.0) (2022-11-24)
 
 
