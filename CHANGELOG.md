@@ -1,3 +1,10 @@
+## [4.1.0](https://github.com/etchteam/mobius/compare/v4.0.1...v4.1.0) (2022-11-24)
+
+
+### Features
+
+* bump the tbor fonts ([ab7499d](https://github.com/etchteam/mobius/commit/ab7499dafc9e17af5f71e97103dbfcd8765aaa9c))
+
 ### [4.0.1](https://github.com/etchteam/mobius/compare/v4.0.0...v4.0.1) (2022-11-24)
 
 
