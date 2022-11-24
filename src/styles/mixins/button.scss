@@ -18,6 +18,10 @@
     background transition.$duration transition.$timing,
     border-color transition.$duration transition.$timing;
   user-select: none;
+
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 @mixin default {
