@@ -12,7 +12,7 @@
 @mixin create-skins($skins) {
   .skin {
     // Don't affect grid/flex layout
-    display: contets;
+    display: contents;
 
     @each $skin in $skins {
       &--#{$skin} {
