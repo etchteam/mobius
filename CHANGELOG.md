@@ -1,3 +1,10 @@
+### [4.3.2](https://github.com/etchteam/mobius/compare/v4.3.1...v4.3.2) (2022-11-24)
+
+
+### Bug Fixes
+
+* button underline hover ([b140570](https://github.com/etchteam/mobius/commit/b1405709bf64a471a84503fae3d792359b28c08c))
+
 ### [4.3.1](https://github.com/etchteam/mobius/compare/v4.3.0...v4.3.1) (2022-11-24)
 
 
