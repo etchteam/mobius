@@ -29,7 +29,7 @@ $skins: light, medium, dark, accent, neutral, positive, negative, attention;
   --skin-heading-color-accent: #{color.$blue-darkest};
   --skin-link-color-accent: #{color.$blue-darkest};
 
-  --font-size-h1: 3rem;
+  --font-size-h1: 2.5rem;
   --font-size-h2: 2rem;
   --font-size-h3: 1.5rem;
   --font-size-h4: 1.25rem;
@@ -56,4 +56,10 @@ $skins: light, medium, dark, accent, neutral, positive, negative, attention;
   --input-border: #{color.$duck-egg};
   --input-border-hover: #{color.$duck-egg};
   --input-color: #{color.$blue-darkest};
+}
+
+@media (min-width: breakpoint.$tablet) {
+  :root {
+    --font-size-h1: 3rem;
+  }
 }
