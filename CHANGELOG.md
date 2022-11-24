@@ -1,3 +1,10 @@
+## [3.1.0](https://github.com/etchteam/mobius/compare/v3.0.1...v3.1.0) (2022-11-24)
+
+
+### Features
+
+* add text transform to text component ([df46c80](https://github.com/etchteam/mobius/commit/df46c80ab6b8448e519632ca13de2714db13f54d))
+
 ### [3.0.1](https://github.com/etchteam/mobius/compare/v3.0.0...v3.0.1) (2022-11-24)
 
 
