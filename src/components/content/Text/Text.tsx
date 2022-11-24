@@ -15,12 +15,13 @@ export interface TextProps {
   size?: Sizes;
   color?: Colors;
   flush?: boolean;
+  transform?: string;
   [key: string]: any;
 }
 
 const Text = (
   {
-    children, as, align, display, weight, size, color, flush, ...props
+    children, as, align, display, weight, size, color, flush, transform, ...props
   }:
   TextProps,
 ) => {
@@ -32,6 +33,7 @@ const Text = (
     [styles[`text--size-${size}`]]: size,
     [styles[`text--color-${color}`]]: color,
     [styles['text--flush']]: flush,
+    [styles[`text--transform-${transform}`]]: transform,
   });
 
   return (
