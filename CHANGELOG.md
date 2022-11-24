@@ -1,3 +1,10 @@
+### [4.0.1](https://github.com/etchteam/mobius/compare/v4.0.0...v4.0.1) (2022-11-24)
+
+
+### Bug Fixes
+
+* add tbor colors to type ([4b224fc](https://github.com/etchteam/mobius/commit/4b224fc074c9fe97ba29e5b19315bc1633ef21ed))
+
 ## [4.0.0](https://github.com/etchteam/mobius/compare/v3.1.0...v4.0.0) (2022-11-24)
 
 
