@@ -1,3 +1,14 @@
+## [4.0.0](https://github.com/etchteam/mobius/compare/v3.1.0...v4.0.0) (2022-11-24)
+
+
+### ⚠ BREAKING CHANGES
+
+* move colors to color file
+
+### Features
+
+* move colors to color file ([4699f98](https://github.com/etchteam/mobius/commit/4699f982bfb7de93c292ba24bc08c6a0781a70c7))
+
 ## [3.1.0](https://github.com/etchteam/mobius/compare/v3.0.1...v3.1.0) (2022-11-24)
 
 
