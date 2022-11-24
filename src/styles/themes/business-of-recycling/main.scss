@@ -29,6 +29,13 @@ $skins: light, medium, dark, accent, neutral, positive, negative, attention;
   --skin-heading-color-accent: #{color.$blue-darkest};
   --skin-link-color-accent: #{color.$blue-darkest};
 
+  --font-size-h1: 2.5em;
+  --font-size-h2: 2em;
+  --font-size-h3: 1.5em;
+  --font-size-h4: 1.25em;
+
+  --link-font-weight: 700;
+
   --button-border-radius: 1.5rem;
   --button-border-width: 2px;
 
@@ -43,8 +50,6 @@ $skins: light, medium, dark, accent, neutral, positive, negative, attention;
   --button-background-secondary: #{color.$blue-darkest};
   --button-border-color-secondary: transparent;
   --button-color-secondary: #{color.$white};
-
-  --link-font-weight: 700;
 
   --input-background: #{color.$white};
   --input-background-focus: #{color.$white};

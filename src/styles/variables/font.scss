@@ -12,10 +12,10 @@ $size-md: 1.125em;
 $size-lg: 1.25em;
 $size-xl: 1.5em;
 
-$size-h1: 2.25em;
-$size-h2: 1.5em;
-$size-h3: 1.25em;
-$size-h4: 1em;
+$size-h1: var(--font-size-h1);
+$size-h2: var(--font-size-h2);
+$size-h3: var(--font-size-h3);
+$size-h4: var(--font-size-h4);
 
 $weight-base: 400;
 $weight-light: 300;
