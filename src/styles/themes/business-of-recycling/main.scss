@@ -1,6 +1,5 @@
 @use '../../variables/color';
 @use '../../mixins/skin';
-@use './variables' as theme;
 
 $skins: light, medium, dark, accent, neutral, positive, negative, attention;
 
@@ -8,22 +7,22 @@ $skins: light, medium, dark, accent, neutral, positive, negative, attention;
 
 :root {
   --skin-background-light: #{color.$white};
-  --skin-background-muted-light: #{theme.$harp};
+  --skin-background-muted-light: #{color.$harp};
   --skin-border-color-light: #{color.$blue-light};
   --skin-color-light: #{color.$blue-darkest};
   --skin-heading-color-light: #{color.$blue-darkest};
   --skin-link-color-light: #{color.$blue-darkest};
   --skin-link-text-decoration-light: underline;
 
-  --skin-background-medium: #{theme.$duck-egg};
-  --skin-background-muted-medium: #{theme.$duck-egg};
+  --skin-background-medium: #{color.$duck-egg};
+  --skin-background-muted-medium: #{color.$duck-egg};
   --skin-border-color-medium: transparent;
   --skin-color-medium: #{color.$blue-darkest};
   --skin-heading-color-medium: #{color.$blue-darkest};
   --skin-link-color-medium: #{color.$blue-darkest};
 
-  --skin-background-accent: #{theme.$citrus};
-  --skin-background-muted-accent: #{theme.$citrus};
+  --skin-background-accent: #{color.$citrus};
+  --skin-background-muted-accent: #{color.$citrus};
   --skin-border-color-accent: transparent;
   --skin-color-accent: #{color.$blue-darkest};
   --skin-heading-color-accent: #{color.$blue-darkest};
@@ -36,7 +35,7 @@ $skins: light, medium, dark, accent, neutral, positive, negative, attention;
   --button-border-color: #{color.$blue-darkest};
   --button-color: #{color.$blue-darkest};
 
-  --button-background-primary: #{theme.$citrus};
+  --button-background-primary: #{color.$citrus};
   --button-border-color-primary: transparent;
   --button-color-primary: #{color.$blue-darkest};
 
@@ -48,7 +47,7 @@ $skins: light, medium, dark, accent, neutral, positive, negative, attention;
 
   --input-background: #{color.$white};
   --input-background-focus: #{color.$white};
-  --input-border: #{theme.$duck-egg};
-  --input-border-hover: #{theme.$duck-egg};
+  --input-border: #{color.$duck-egg};
+  --input-border-hover: #{color.$duck-egg};
   --input-color: #{color.$blue-darkest};
 }
