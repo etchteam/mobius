@@ -1,3 +1,10 @@
+## [4.3.0](https://github.com/etchteam/mobius/compare/v4.2.0...v4.3.0) (2022-11-24)
+
+
+### Features
+
+* bump h1 up again ([a3dc83a](https://github.com/etchteam/mobius/commit/a3dc83ab4204f3735f739f29dda765ca4a9da9fd))
+
 ## [4.2.0](https://github.com/etchteam/mobius/compare/v4.1.0...v4.2.0) (2022-11-24)
 
 
