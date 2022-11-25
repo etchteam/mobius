@@ -42,6 +42,7 @@ function ContainerSvg(
       );
     case 'Communal Bin':
     case 'Communal Wheeled Bin':
+    case 'Large Wheeled Bin':
       return (
         <svg className={styles['container-svg']} viewBox="0 0 128 126" fill="none" xmlns="http://www.w3.org/2000/svg">
           <circle cx="24" cy="116" r="10" fill="#4D6B87" />
@@ -123,6 +124,51 @@ function ContainerSvg(
           <path fillRule="evenodd" clipRule="evenodd" d="M1.01405 6.44664C0.0612497 6.99674 -0.27894 8.20635 0.247444 9.17245L3.82701 15.7422L6.95948 78.3916C7.84218 78.1367 8.77508 78 9.7399 78C10.2058 78 10.6643 78.0319 11.1132 78.0935L7.73979 14.0003L7.74008 14.0001L3.78088 7.1841C3.21951 6.21768 1.98194 5.88783 1.01405 6.44664ZM17.7406 94C18.6141 92.8372 19.2399 91.4778 19.5399 90H55.0596C53.6729 92.3982 51.0808 94 48.1299 94H17.7406Z" fill="#4D6B87" />
           <circle cx="9.73975" cy="88" r="8" fill="#4D6B87" />
         </svg>
+      );
+    case 'Single Sack':
+      return (
+        <svg className={styles['container-svg']} viewBox="0 0 64 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path className={bodyClassName} d="M31.4855 4.99564L25.6572 0L20.0004 4.84873L30.3836 13.7487C13.4615 14.4703 0 26.4591 0 41.1429V82.2857C0 89.8599 7.16344 96 16 96H48C56.8366 96 64 89.8599 64 82.2857V41.1429C64 26.1725 50.0078 14.0032 32.6215 13.7194L42.9706 4.84874L37.3137 1.06267e-05L31.4855 4.99564Z" fill="#89C1AB" />
+        </svg>
+      );
+    case 'Skip':
+      return (
+        <svg className={styles['container-svg']} viewBox="0 0 160 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path className={bodyClassName} d="M0 16H160L120 78H40L0 16Z" fill="#89C1AB" />
+          <path className={bodyClassName} d="M160 22L0 22L20 1.22392e-05L140 1.74846e-06L160 22Z" fill="#89C1AB" />
+          <rect className={bodyClassName} y="16" width="160" height="8" fill="#89C1AB" />
+        </svg>
+      );
+    case 'Front End Load':
+      return (
+        <svg className={styles['container-svg']} viewBox="0 0 104 97" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect className={bodyClassName} x="4" y="32.1244" width="96" height="64" fill="#89C1AB" />
+          <path className={bodyClassName} d="M21.0832 0H50V32H4L21.0832 0Z" fill="#89C1AB" />
+          <path className={bodyClassName} d="M50 6V33H97L50 6Z" fill="#89C1AB" />
+          <path className={bodyClassName} d="M0 32H104V40H0V32Z" fill="#89C1AB" />
+          <path d="M51.9395 0.128533L98.9945 27.1244L98.9945 31.217L51.9395 4.04978L51.9395 0.128533Z" fill="#4D6B87" />
+        </svg>
+      );
+    case 'Rear End Loader':
+      return (
+        <svg className={styles['container-svg']} viewBox="0 0 197 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path className={bodyClassName} d="M4 30H192L154.4 76H41.6L4 30Z" fill="#89C1AB" />
+          <path className={bodyClassName} d="M190 30L0 30L-2.62268e-06 -5.5581e-07L77.9923 -9.28147e-06L190 30Z" fill="#89C1AB" />
+          <rect className={bodyClassName} y="22" width="160" height="8" fill="#89C1AB" />
+          <path d="M98.0352 0L196.72 26.4424L195.684 30.3061L96.9999 3.8637L98.0352 0Z" fill="#4D6B87" />
+          <path className={bodyClassName} d="M77 0H96L91 22H77V0Z" fill="#89C1AB" />
+        </svg>
+      );
+    case 'Roll On Roll Off':
+      return (
+        <svg className={styles['container-svg']} viewBox="0 0 160 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect className={bodyClassName} x="4" y="16" width="152" height="64" rx="4" fill="#89C1AB" />
+          <path className={bodyClassName} d="M4 0H12V76C12 78.2091 10.2091 80 8 80C5.79086 80 4 78.2091 4 76V0Z" fill="#89C1AB" />
+          <rect x="140" y="79.3264" width="8.08421" height="8.08421" rx="4.04211" fill="#4D6B87" />
+          <rect x="12" y="79.3264" width="8.08421" height="8.08421" rx="4.04211" fill="#4D6B87" />
+          <rect className={bodyClassName} y="16" width="160" height="8" fill="#89C1AB" />
+        </svg>
+
       );
     default:
       return null;
