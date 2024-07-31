@@ -3,3 +3,6 @@ storybook-static
 dist
 src/index.tsx
 *.log
+.vscode/*
+
+!.vscode/settings.json

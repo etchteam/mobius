@@ -1,44 +1,35 @@
 ---
 pull_request_rules:
-  - name: Auto-squash dependabot PRs when all checks pass
+  - name: Automatically approve and merge dependabot PRs
     conditions:
-      - and:
-        - author~=^dependabot(|-preview)\[bot\]$
-        - check-success=A11y tests (18)
-        - check-success=Linting & Unit Tests (18)
-        - check-success=A11y tests (20)
-        - check-success=Linting & Unit Tests (20)
-        - check-success=SonarCloud Code Analysis
-        - check-success=chromatic
-        - label!=wontfix
+      - author=dependabot[bot]
+      - label!=wontfix
     actions:
       review:
         type: APPROVE
         message: Automatically approving dependabot
       merge:
         method: merge
-  - name: Auto-squash when all builds pass and the PR has been approved
+  - name: Automatically merge when the PR has been approved and there are no comments
     conditions:
-      - and:
-        - check-success=A11y tests (18)
-        - check-success=Linting & Unit Tests (18)
-        - check-success=A11y tests (20)
-        - check-success=Linting & Unit Tests (20)
-        - check-success=SonarCloud Code Analysis
-        - check-success=chromatic
-        - label!=wontfix
-        - "#approved-reviews-by>=1"
+      - "#approved-reviews-by>=1"
+      - "#changes-requested-reviews-by=0"
     actions:
       merge:
         method: merge
-  - name: Ask an old fart to review the code
+  - name: Ask for reviews
     conditions:
       - -closed
       - -draft
     actions:
       request_reviews:
+        teams:
+          - devs
+        random_count: 2
+  - name: Automatically assign to author
+    conditions:
+      - author!=dependabot[bot]
+    actions:
+      assign:
         users:
-          - JoshTheWanderer
-          - DanWebb
-          - gavmck
-        random_count: 1
+          - "{{author}}"
