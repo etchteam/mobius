@@ -25,6 +25,7 @@
     background: var(--input-background-focus);
     outline-color: var(--input-outline-color-focus);
     outline-color: var(--input-outline-color-focus-webkit);
+    outline-offset: 1px;
     outline-style: var(--input-outline-style-focus);
     outline-width: var(--input-outline-width-focus);
   }
