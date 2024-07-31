@@ -66,6 +66,10 @@ $skins: light, medium, dark, info, accent, neutral, positive, negative,
   --input-color: #{color.$blue-darkest};
   --input-checked: #{color.$blue-darkest};
   --input-checkradio-border-radius: var(--button-border-radius);
+  --input-outline-color-focus: Highlight;
+  --input-outline-color-focus-webkit: -webkit-focus-ring-color;
+  --input-outline-style-focus: auto;
+  --input-outline-width-focus: 5px;
 
   --card-border-radius: 0.5rem;
 }
