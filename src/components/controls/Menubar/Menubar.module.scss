@@ -67,7 +67,8 @@ $menubar-highlight-width: 4px;
         opacity: 0;
         position: absolute;
         top: 0;
-        transition: opacity transition.$duration transition.$timing,
+        transition:
+          opacity transition.$duration transition.$timing,
           height transition.$duration transition.$timing;
         width: 100%;
       }

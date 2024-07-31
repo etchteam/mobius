@@ -11,7 +11,8 @@
   border-radius: var(--card-border-radius, 0);
   color: skin.$color;
   display: block;
-  transition: background-color transition.$duration transition.$timing,
+  transition:
+    background-color transition.$duration transition.$timing,
     color transition.$duration transition.$timing,
     border-color transition.$duration transition.$timing;
   width: 100%;

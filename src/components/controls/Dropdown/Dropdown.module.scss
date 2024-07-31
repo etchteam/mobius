@@ -18,7 +18,8 @@
     right: 0;
     top: 100%;
     transform: translateY(-0.25em);
-    transition: opacity transition.$duration transition.$timing,
+    transition:
+      opacity transition.$duration transition.$timing,
       transform transition.$duration transition.$timing;
   }
 

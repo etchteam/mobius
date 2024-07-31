@@ -13,7 +13,8 @@
   display: flex;
   line-height: 1.75;
   position: relative;
-  transition: border-color transition.$duration transition.$timing,
+  transition:
+    border-color transition.$duration transition.$timing,
     background-color transition.$duration transition.$timing;
 
   &:hover,
@@ -95,7 +96,8 @@
   margin-right: spacing.$sm;
   margin-top: spacing.$xs;
   position: relative;
-  transition: background transition.$duration transition.$timing,
+  transition:
+    background transition.$duration transition.$timing,
     border-color transition.$duration transition.$timing,
     color transition.$duration transition.$timing;
   width: font.$size-lg;

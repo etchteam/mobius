@@ -31,7 +31,8 @@
   &__check {
     opacity: 0;
     transform: scale(0.9);
-    transition: opacity transition.$duration transition.$timing,
+    transition:
+      opacity transition.$duration transition.$timing,
       transform transition.$duration-boing transition.$timing-boing;
 
     .checkbox--checked & {

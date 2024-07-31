@@ -148,7 +148,7 @@
 
         @for $i from 1 through 12 {
           &--#{$bp-key}-#{$i} {
-            width: percentage(math.div($i, 12));
+            width: math.percentage(math.div($i, 12));
           }
         }
       }

@@ -21,7 +21,8 @@
     line-height: 1.75;
     padding: 0 math.div(input.$padding-horizontal, 2) 0
       math.div(input.$padding-horizontal, 2);
-    transition: background transition.$duration transition.$timing,
+    transition:
+      background transition.$duration transition.$timing,
       border-color transition.$duration transition.$timing;
 
     &:hover,

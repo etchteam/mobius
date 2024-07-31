@@ -10,7 +10,8 @@
   color: var(--skin-link-color);
   cursor: pointer;
   padding: 0;
-  transition: opacity transition.$duration transition.$timing,
+  transition:
+    opacity transition.$duration transition.$timing,
     color transition.$duration transition.$timing;
 
   &[disabled] {

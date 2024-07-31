@@ -19,7 +19,8 @@
     content-visibility: hidden;
     display: grid;
     grid-template-rows: 0fr;
-    transition: grid-template-rows transition.$duration transition.$timing,
+    transition:
+      grid-template-rows transition.$duration transition.$timing,
       content-visibility transition.$duration transition.$timing allow-discrete;
 
     &--open {

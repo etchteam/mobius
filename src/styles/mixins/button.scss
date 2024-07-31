@@ -14,7 +14,8 @@
   padding: calc(#{spacing.$sm} - var(--button-border-width)) spacing.$md;
   text-align: center;
   text-decoration: none;
-  transition: opacity transition.$duration transition.$timing,
+  transition:
+    opacity transition.$duration transition.$timing,
     background transition.$duration transition.$timing,
     border-color transition.$duration transition.$timing,
     filter transition.$duration transition.$timing;
