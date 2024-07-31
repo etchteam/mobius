@@ -42,4 +42,8 @@
   &--disabled {
     @include forms.input-disabled;
   }
+
+  &:focus-within {
+    --input-outline-offset-focus: 1px;
+  }
 }
