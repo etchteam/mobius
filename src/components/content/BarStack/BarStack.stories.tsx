@@ -14,9 +14,10 @@ export default {
 export const Default = () => {
   return (
     <BarStack>
-      <BarStack.Item color="dry-stream" size={25} />
-      <BarStack.Item color="residual-stream" size={25} />
-      <BarStack.Item color="food-stream" size={25} />
+      <BarStack.Item color="dry-stream" size={20} />
+      <BarStack.Item color="residual-stream" size={20} />
+      <BarStack.Item color="food-stream" size={20} />
+      <BarStack.Item color="garden-stream" size={20} />
     </BarStack>
   );
 };
@@ -28,7 +29,7 @@ export const Compact = () => {
     <BarStack compact>
       <BarStack.Item color="dry-stream" size={25} />
       <BarStack.Item color="residual-stream" size={25} />
-      <BarStack.Item color="food-stream" size={25} />
+      <BarStack.Item color="organic-stream" size={25} />
     </BarStack>
   );
 };

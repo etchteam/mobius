@@ -107,6 +107,7 @@ export const Colors = () => {
     'dry-stream',
     'food-stream',
     'garden-stream',
+    'organic-stream',
     'residual-stream',
   ];
 

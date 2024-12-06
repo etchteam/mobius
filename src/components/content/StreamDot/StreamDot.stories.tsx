@@ -25,6 +25,9 @@ export const Default = () => (
     <div>
       <StreamDot stream="garden" /> Garden
     </div>
+    <div>
+      <StreamDot stream="organic" /> Organic
+    </div>
   </>
 );
 
