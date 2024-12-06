@@ -1,0 +1,24 @@
+@use '../../../styles/variables/breakpoint';
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loading-spinner {
+  animation: spin 1s linear infinite;
+  aspect-ratio: 1;
+  border: calc(var(--font-size-xl) * 0.2) solid var(--color-earth);
+  border-radius: 50%;
+  border-top: calc(var(--font-size-xl) * 0.2) solid var(--color-forest);
+  height: calc(var(--font-size-xl));
+
+  @media screen and (min-width: breakpoint.$md) {
+    height: calc(var(--font-size-xl) * 2);
+  }
+}
