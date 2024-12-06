@@ -89,6 +89,7 @@ $citrus: #c7d56b;
   --color-residual-stream: var(--mobius-color-residual-stream);
   --color-food-stream: var(--mobius-color-food-stream);
   --color-garden-stream: var(--mobius-color-garden-stream);
+  --color-organic-stream: var(--mobius-color-organic-stream);
 }
 
 $colors: (
@@ -143,4 +144,5 @@ $colors: (
   'residual-stream': var(--color-residual-stream),
   'food-stream': var(--color-food-stream),
   'garden-stream': var(--color-garden-stream),
+  'organic-stream': var(--color-organic-stream),
 );

@@ -1,1 +1,1 @@
-export type StreamType = 'dry' | 'garden' | 'residual' | 'food';
+export type StreamType = 'dry' | 'garden' | 'residual' | 'food' | 'organic';
