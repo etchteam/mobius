@@ -2,25 +2,25 @@
 @use '../../../styles/variables/font';
 
 .badge {
-  background: var(--skin-background);
+  background: var(--theme-background);
   border-radius: var(--radius-lg);
-  color: var(--skin-color);
+  color: var(--theme-color);
   display: inline-block;
   font-weight: var(--font-weight-bold);
   padding: var(--spacing-sm) calc(var(--spacing-sm) * 1.5);
 
   &--muted {
-    background: var(--skin-background-muted);
-    color: var(--skin-color-muted);
+    background: var(--theme-background-muted);
+    color: var(--theme-color-muted);
   }
 
   &--inverse {
-    background: var(--skin-color);
-    color: var(--skin-background);
+    background: var(--theme-color);
+    color: var(--theme-background);
 
     &.badge--muted {
-      background-color: var(--skin-color-muted);
-      color: var(--skin-background-muted);
+      background-color: var(--theme-color-muted);
+      color: var(--theme-background-muted);
     }
   }
 

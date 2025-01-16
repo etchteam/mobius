@@ -1,0 +1,11 @@
+@use '../mixins/theme';
+
+$themes: light, dark, info, attention, neutral, positive, negative;
+
+.m-theme {
+  @each $theme in $themes {
+    &-#{$theme} {
+      @include theme.theme($theme);
+    }
+  }
+}

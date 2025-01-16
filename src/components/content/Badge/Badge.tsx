@@ -11,6 +11,7 @@ export interface BadgeProps {
   readonly rounded?: boolean;
   readonly muted?: boolean;
   readonly inverse?: boolean;
+  readonly className?: string;
 }
 
 const Badge = ({
@@ -19,6 +20,7 @@ const Badge = ({
   rounded = false,
   muted = false,
   inverse = false,
+  className,
 }: BadgeProps) => (
   <span
     className={classNames(styles.badge, {
@@ -26,6 +28,7 @@ const Badge = ({
       [styles['badge--rounded']]: rounded,
       [styles['badge--muted']]: muted,
       [styles['badge--inverse']]: inverse,
+      [`${className}`]: !!className,
     })}
   >
     {children}

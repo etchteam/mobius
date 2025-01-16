@@ -6,7 +6,7 @@ import Icon from '../../content/Icon/Icon';
 import Input from './Input';
 
 export default {
-  title: 'Controls/Input',
+  title: 'Components/Controls/Input',
   component: Input,
   parameters: {
     a11y: {

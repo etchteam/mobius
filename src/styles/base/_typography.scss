@@ -64,12 +64,12 @@ p {
 }
 
 a {
-  color: var(--skin-link-color);
+  color: var(--theme-link-color);
   font-weight: var(--link-font-weight);
-  text-decoration: var(--skin-link-text-decoration);
+  text-decoration: var(--theme-link-text-decoration);
 
   &:hover {
-    text-decoration: var(--skin-link-text-decoration-hover);
+    text-decoration: var(--theme-link-text-decoration-hover);
   }
 }
 

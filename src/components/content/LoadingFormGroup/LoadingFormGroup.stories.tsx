@@ -4,7 +4,7 @@ import React from 'react';
 import LoadingFormGroup from './LoadingFormGroup';
 
 export default {
-  title: 'Content/Loading Form Group',
+  title: 'Components/Content/Loading Form Group',
   component: LoadingFormGroup,
 } as Meta;
 

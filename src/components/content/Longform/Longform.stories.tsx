@@ -4,7 +4,7 @@ import React from 'react';
 import Longform from './Longform';
 
 export default {
-  title: 'Content/Longform',
+  title: 'Components/Content/Longform',
   component: Longform,
 } as Meta;
 

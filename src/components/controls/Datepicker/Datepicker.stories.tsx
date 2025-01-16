@@ -7,7 +7,7 @@ import Label from '../Label/Label';
 import Datepicker from './Datepicker';
 
 export default {
-  title: 'Controls/Datepicker',
+  title: 'Components/Controls/Datepicker',
   component: Datepicker,
 } as Meta;
 

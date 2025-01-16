@@ -4,7 +4,7 @@ import React from 'react';
 import Spacing from './Spacing';
 
 export default {
-  title: 'Composition/Spacing',
+  title: 'Components/Composition/Spacing',
   component: Spacing,
 } as Meta;
 

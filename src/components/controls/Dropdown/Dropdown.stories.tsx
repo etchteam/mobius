@@ -7,7 +7,7 @@ import Icon from 'components/content/Icon/Icon';
 import Button from 'components/controls/Button/Button';
 
 export default {
-  title: 'Controls/Dropdown',
+  title: 'Components/Controls/Dropdown',
   component: Dropdown,
 } as Meta;
 

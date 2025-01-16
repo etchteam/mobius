@@ -1,7 +1,7 @@
 .alert {
-  background: var(--skin-background);
+  background: var(--theme-background);
   border-radius: var(--radius-md);
-  color: var(--skin-color);
+  color: var(--theme-color);
   padding: var(--spacing-md);
 
   &__close {

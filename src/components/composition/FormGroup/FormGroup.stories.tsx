@@ -2,7 +2,6 @@ import { Meta } from '@storybook/react';
 import React, { useState } from 'react';
 
 import Grid from '../Grid/Grid';
-import Skin from '../Skin/Skin';
 import Spacing from '../Spacing/Spacing';
 
 import FormGroup from './FormGroup';
@@ -16,7 +15,7 @@ import Radio from 'components/controls/Radio/Radio';
 import TextButton from 'components/controls/TextButton/TextButton';
 
 export default {
-  title: 'Composition/Form group',
+  title: 'Components/Composition/Form group',
   component: FormGroup,
 } as Meta;
 
@@ -90,9 +89,7 @@ export function WithInfo() {
           <Input id="my-input-one" name="my-input" />
         </FormGroup.Control>
         <FormGroup.Info controlId="form-group-info-one" open={infoOneOpen}>
-          <Skin skin="info">
-            <Alert>This is an info message</Alert>
-          </Skin>
+          <Alert className="m-theme-info">This is an info message</Alert>
         </FormGroup.Info>
       </FormGroup>
 
@@ -113,9 +110,7 @@ export function WithInfo() {
           <Input id="my-input-two" name="my-input-two" />
         </FormGroup.Control>
         <FormGroup.Info controlId="form-group-info-two" open={infoTwoOpen}>
-          <Skin skin="info">
-            <Alert>This is an info message</Alert>
-          </Skin>
+          <Alert className="m-theme-info">This is an info message</Alert>
         </FormGroup.Info>
       </FormGroup>
     </>

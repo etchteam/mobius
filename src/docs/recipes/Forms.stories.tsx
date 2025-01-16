@@ -12,7 +12,7 @@ import Radio from 'components/controls/Radio/Radio';
 import Select from 'components/controls/Select/Select';
 
 export default {
-  title: 'Docs/Examples',
+  title: 'Recipes/Forms',
   parameters: {
     a11y: {
       config: {

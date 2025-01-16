@@ -1,4 +1,4 @@
-@use '../styles/variables/font';
+@use '../../../styles/variables/font';
 
 :export {
   @each $name, $size in font.$sizes {

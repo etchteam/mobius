@@ -4,7 +4,7 @@ import React from 'react';
 import Eyebrow from './Eyebrow';
 
 export default {
-  title: 'Content/Eyebrow',
+  title: 'Components/Content/Eyebrow',
   component: Eyebrow,
 } as Meta;
 

@@ -6,7 +6,7 @@ import VehicleSvg from './VehicleSvg';
 import Grid from 'components/composition/Grid/Grid';
 
 export default {
-  title: 'Content/VehicleSvg',
+  title: 'Components/Content/VehicleSvg',
   component: VehicleSvg,
 } as Meta;
 

@@ -1,4 +1,4 @@
-@use '../styles/variables/breakpoint';
+@use '../../../styles/variables/breakpoint';
 
 :export {
   @each $name, $bp in breakpoint.$map {

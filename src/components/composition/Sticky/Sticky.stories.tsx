@@ -4,7 +4,7 @@ import React from 'react';
 import Sticky from './Sticky';
 
 export default {
-  title: 'Composition/Sticky',
+  title: 'Components/Composition/Sticky',
   component: Sticky,
 } as Meta;
 

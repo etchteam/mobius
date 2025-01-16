@@ -7,7 +7,7 @@ import Menubar from './Menubar';
 import Icon from 'components/content/Icon/Icon';
 
 export default {
-  title: 'Controls/Menubar',
+  title: 'Components/Controls/Menubar',
   component: Menubar,
   subcomponents: {
     MenubarTabs: Menubar.Tabs,

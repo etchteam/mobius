@@ -9,7 +9,7 @@ import FormGroup from 'components/composition/FormGroup/FormGroup';
 import Grid from 'components/composition/Grid/Grid';
 
 export default {
-  title: 'Controls/Radio',
+  title: 'Components/Controls/Radio',
   component: Radio,
 } as Meta;
 

@@ -1,0 +1,16 @@
+@mixin theme($type) {
+  --theme-background: var(--mobius-skin-background-#{$type});
+  --theme-background-muted: var(--mobius-skin-background-muted-#{$type});
+  --theme-border-color: var(--mobius-skin-border-color-#{$type});
+  --theme-border-color-muted: var(--mobius-skin-border-color-muted-#{$type});
+  --theme-color: var(--mobius-skin-color-#{$type});
+  --theme-color-muted: var(--mobius-skin-color-muted-#{$type});
+  --theme-heading-color: var(--mobius-skin-heading-color-#{$type});
+  --theme-link-color: var(--mobius-skin-link-color-#{$type});
+  --theme-link-text-decoration: var(
+    --mobius-skin-link-text-decoration-#{$type}
+  );
+  --theme-link-text-decoration-hover: var(
+    --mobius-skin-link-text-decoration-hover-#{$type}
+  );
+}

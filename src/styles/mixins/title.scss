@@ -1,5 +1,5 @@
 @mixin title {
-  color: var(--skin-heading-color);
+  color: var(--theme-heading-color);
   font-weight: var(--heading-font-weight, var(--font-weight-bold));
   line-height: var(--font-line-height-sm);
   margin-bottom: var(--spacing-xs);

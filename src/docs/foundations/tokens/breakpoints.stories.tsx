@@ -2,12 +2,12 @@ import { Meta } from '@storybook/react';
 import map from 'lodash/map';
 import React from 'react';
 
-import Spacing from '../components/composition/Spacing/Spacing';
+import Spacing from '../../../components/composition/Spacing/Spacing';
 
 import breakpoints from './breakpoints.module.scss';
 
 export default {
-  title: 'Tokens/Breakpoints',
+  title: 'Foundations/Tokens/Breakpoints',
 } as Meta;
 
 export const Breakpoints = () => (

@@ -21,7 +21,6 @@ module.exports = {
     },
     '@storybook/addon-a11y',
     '@storybook/addon-docs',
-    '@etchteam/storybook-addon-css-variables-theme',
     '@storybook/addon-webpack5-compiler-babel'
   ],
   'framework': {

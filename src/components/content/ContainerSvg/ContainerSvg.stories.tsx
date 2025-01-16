@@ -6,7 +6,7 @@ import ContainerSvg from './ContainerSvg';
 import Grid from 'components/composition/Grid/Grid';
 
 export default {
-  title: 'Content/ContainerSvg',
+  title: 'Components/Content/ContainerSvg',
   component: ContainerSvg,
 } as Meta;
 

@@ -1,4 +1,4 @@
-@use '../styles/variables/container';
+@use '../../../styles/variables/container';
 
 :export {
   @each $name, $color in container.$colors {

@@ -10,7 +10,7 @@ import Button from 'components/controls/Button/Button';
 import Checkbox from 'components/controls/Checkbox/Checkbox';
 
 export default {
-  title: 'Composition/List',
+  title: 'Components/Composition/List',
   component: List,
   subcomponents: {
     ListItem: List.Item,

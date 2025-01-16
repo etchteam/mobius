@@ -4,7 +4,7 @@ import React from 'react';
 import StreamDot from './StreamDot';
 
 export default {
-  title: 'Content/Stream Dot',
+  title: 'Components/Content/Stream Dot',
   component: StreamDot,
 } as Meta;
 

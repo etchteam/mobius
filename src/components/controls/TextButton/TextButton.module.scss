@@ -5,7 +5,7 @@
   background: none;
   border: 0 none;
   border-radius: var(--radius-sm);
-  color: var(--skin-link-color);
+  color: var(--theme-link-color);
   cursor: pointer;
   padding: var(--spacing-sm) 0;
   transition:
@@ -49,7 +49,7 @@
     }
 
     &:focus {
-      background: var(--skin-border-color);
+      background: var(--theme-border-color);
       text-decoration: none;
     }
   }

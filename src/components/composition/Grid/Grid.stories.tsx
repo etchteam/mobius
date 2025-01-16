@@ -6,7 +6,7 @@ import Grid from './Grid';
 import Card from 'components/canvas/Card/Card';
 
 export default {
-  title: 'Composition/Grid',
+  title: 'Components/Composition/Grid',
   component: Grid,
   subcomponents: {
     GridItem: Grid.Item,

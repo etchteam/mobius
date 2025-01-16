@@ -5,7 +5,7 @@
   user-select: none;
 
   &::before {
-    background-color: var(--skin-color);
+    background-color: var(--theme-color);
     content: '';
     inset: 0;
     opacity: 0.075;
@@ -17,7 +17,7 @@
     background-image: linear-gradient(
       to right,
       transparent 0,
-      var(--skin-background) 60%,
+      var(--theme-background) 60%,
       transparent
     );
     content: '';

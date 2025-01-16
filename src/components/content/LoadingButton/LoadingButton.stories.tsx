@@ -4,7 +4,7 @@ import React from 'react';
 import LoadingButton from './LoadingButton';
 
 export default {
-  title: 'Content/Loading Button',
+  title: 'Components/Content/Loading Button',
   component: LoadingButton,
 } as Meta;
 

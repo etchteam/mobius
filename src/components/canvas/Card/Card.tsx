@@ -24,6 +24,7 @@ export interface CardProps {
   readonly muted?: boolean;
   readonly onClick?: () => void;
   readonly shadow?: boolean;
+  readonly className?: string;
   [x: string]: unknown;
 }
 
@@ -44,6 +45,7 @@ class Card extends Component<CardProps> {
       muted,
       onClick,
       shadow,
+      className,
       ...props
     } = this.props;
 
@@ -64,6 +66,7 @@ class Card extends Component<CardProps> {
           [styles['card--disabled']]: disabled,
           [styles['card--control']]: control,
           [styles['card--muted']]: muted,
+          [`${className}`]: className,
         })}
         href={href}
         onClick={onClick}

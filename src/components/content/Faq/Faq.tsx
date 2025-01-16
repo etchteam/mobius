@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 
 import styles from './Faq.module.scss';
 
-import Title from 'components/content/Title/Title';
 import Collapse from 'components/controls/Collapse/Collapse';
 
 interface FaqProps {
@@ -25,9 +24,9 @@ const Faq = ({ question, children }: FaqProps) => {
         textDecoration="none"
         onToggle={setOpen}
         headerLabel={
-          <Title as="h3" size="h4" family="default">
-            <span itemProp="name">{question}</span>
-          </Title>
+          <span className="m-text-size-h4 m-text-weight-bold" itemProp="name">
+            {question}
+          </span>
         }
         align="right"
       >

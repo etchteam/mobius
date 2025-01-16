@@ -9,7 +9,7 @@ import Card from 'components/canvas/Card/Card';
 import Button from 'components/controls/Button/Button';
 
 export default {
-  title: 'Composition/Modal',
+  title: 'Components/Composition/Modal',
   component: Modal,
   subcomponents: {
     ModalInner: Modal.Inner,

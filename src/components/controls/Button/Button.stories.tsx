@@ -4,12 +4,11 @@ import React, { PropsWithChildren } from 'react';
 import Button from './Button';
 
 import Section from 'components/canvas/Section/Section';
-import Skin from 'components/composition/Skin/Skin';
 import Spacing from 'components/composition/Spacing/Spacing';
 import Icon from 'components/content/Icon/Icon';
 
 export default {
-  title: 'Controls/Button',
+  title: 'Components/Controls/Button',
   component: Button,
 } as Meta;
 
@@ -30,20 +29,18 @@ export function Types() {
 
 export function DarkMode() {
   return (
-    <Skin skin="dark">
-      <Section>
-        <Spacing bottom="md" top="md">
-          <Button>Button</Button>
-          <Button type="primary">Button</Button>{' '}
-          <Button type="secondary">Button</Button>{' '}
-          <Button type="positive">Button</Button>{' '}
-          <Button type="negative">Button</Button>{' '}
-          <Button type="primary" icon>
-            <Icon icon="edit" title="Moderate" />
-          </Button>
-        </Spacing>
-      </Section>
-    </Skin>
+    <Section className="m-theme-dark">
+      <Spacing bottom="md" top="md">
+        <Button>Button</Button>
+        <Button type="primary">Button</Button>{' '}
+        <Button type="secondary">Button</Button>{' '}
+        <Button type="positive">Button</Button>{' '}
+        <Button type="negative">Button</Button>{' '}
+        <Button type="primary" icon>
+          <Icon icon="edit" title="Moderate" />
+        </Button>
+      </Spacing>
+    </Section>
   );
 }
 

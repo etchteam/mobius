@@ -4,7 +4,7 @@ import React from 'react';
 import Container from './Container';
 
 export default {
-  title: 'Content/Container',
+  title: 'Components/Content/Container',
   component: Container,
 } as Meta;
 

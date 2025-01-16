@@ -1,0 +1,40 @@
+:root {
+  $themes: light, dark, info, attention, positive, negative, neutral;
+
+  @each $theme in $themes {
+    --theme-background-#{$theme}: var(--mobius-skin-background-#{$theme});
+    --theme-background-muted-#{$theme}: var(
+      --mobius-skin-background-muted-#{$theme}
+    );
+
+    --theme-border-color-#{$theme}: var(--mobius-skin-border-color-#{$theme});
+    --theme-border-color-muted-#{$theme}: var(
+      --mobius-skin-border-color-muted-#{$theme}
+    );
+
+    --theme-color-#{$theme}: var(--mobius-skin-color-#{$theme});
+    --theme-color-muted-#{$theme}: var(--mobius-skin-color-muted-#{$theme});
+    --theme-heading-color-#{$theme}: var(--mobius-skin-heading-color-#{$theme});
+
+    --theme-link-color-#{$theme}: var(--mobius-skin-link-color-#{$theme});
+    --theme-link-text-decoration-#{$theme}: var(
+      --mobius-skin-link-text-decoration-#{$theme}
+    );
+    --theme-link-text-decoration-hover-#{$theme}: var(
+      --mobius-skin-link-text-decoration-hover-#{$theme}
+    );
+  }
+
+  --theme-background: var(--theme-background-light);
+  --theme-background-muted: var(--theme-background-muted-light);
+  --theme-border-color: var(--theme-border-color-light);
+  --theme-border-color-muted: var(--theme-border-color-muted-light);
+  --theme-color: var(--theme-color-light);
+  --theme-color-muted: var(--theme-color-muted-light);
+  --theme-heading-color: var(--theme-heading-color-light);
+  --theme-link-color: var(--theme-link-color-light);
+  --theme-link-text-decoration: var(--theme-link-text-decoration-light);
+  --theme-link-text-decoration-hover: var(
+    --theme-link-text-decoration-hover-light
+  );
+}

@@ -4,7 +4,7 @@ import React from 'react';
 import Textarea from './Textarea';
 
 export default {
-  title: 'Controls/Textarea',
+  title: 'Components/Controls/Textarea',
   component: Textarea,
   parameters: {
     a11y: {

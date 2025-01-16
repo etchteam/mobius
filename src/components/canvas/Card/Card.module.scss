@@ -1,10 +1,10 @@
 .card {
-  --card-border-color: var(--skin-border-color);
+  --card-border-color: var(--theme-border-color);
 
-  background: var(--skin-background);
+  background: var(--theme-background);
   border: 1px solid transparent;
   border-radius: var(--card-border-radius);
-  color: var(--skin-color);
+  color: var(--theme-color);
   display: block;
   transition:
     background-color var(--transition),
@@ -89,14 +89,14 @@
   }
 
   &--disabled {
-    background: var(--skin-background-muted);
+    background: var(--theme-background-muted);
     pointer-events: none;
   }
 
   &--muted,
   &__body--muted {
-    --card-border-color: var(--skin-border-color-muted);
-    background: var(--skin-background-muted);
+    --card-border-color: var(--theme-border-color-muted);
+    background: var(--theme-background-muted);
   }
 
   &:has(.card__body--muted) {

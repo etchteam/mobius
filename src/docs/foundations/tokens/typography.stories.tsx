@@ -1,50 +1,41 @@
 import { Meta } from '@storybook/react';
 import React from 'react';
 
-import Spacing from '../components/composition/Spacing/Spacing';
-import Text from '../components/content/Text/Text';
+import Spacing from '../../../components/composition/Spacing/Spacing';
 
 export default {
-  title: 'Tokens/Typography',
+  title: 'Foundations/Tokens/Typography',
 } as Meta;
 
 export const Typography = () => (
   <>
     <Spacing bottom="md">
       <span>base</span>
-      <Text size="base" as="div">
+      <div className="m-text-size-base">
         The future is in our hands to shape.
-      </Text>
+      </div>
     </Spacing>
     <Spacing bottom="md">
       <span>xs</span>
-      <Text size="xs" as="div">
-        The future is in our hands to shape.
-      </Text>
+      <div className="m-text-size-xs">The future is in our hands to shape.</div>
     </Spacing>
     <Spacing bottom="md">
       <span>sm</span>
-      <Text size="base" as="div">
+      <div className="m-text-size-base">
         The future is in our hands to shape.
-      </Text>
+      </div>
     </Spacing>
     <Spacing bottom="md">
       <span>md</span>
-      <Text size="md" as="div">
-        The future is in our hands to shape.
-      </Text>
+      <div className="m-text-size-md">The future is in our hands to shape.</div>
     </Spacing>
     <Spacing bottom="md">
       <span>lg</span>
-      <Text size="lg" as="div">
-        The future is in our hands to shape.
-      </Text>
+      <div className="m-text-size-lg">The future is in our hands to shape.</div>
     </Spacing>
     <Spacing bottom="md">
       <span>xl</span>
-      <Text size="xl" as="div">
-        The future is in our hands to shape.
-      </Text>
+      <div className="m-text-size-xl">The future is in our hands to shape.</div>
     </Spacing>
     <Spacing bottom="md">
       <span>h1</span>

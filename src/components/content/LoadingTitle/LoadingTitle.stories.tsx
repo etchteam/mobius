@@ -4,7 +4,7 @@ import React from 'react';
 import LoadingTitle from './LoadingTitle';
 
 export default {
-  title: 'Content/Loading Title',
+  title: 'Components/Content/Loading Title',
   component: LoadingTitle,
   parameters: {
     a11y: {

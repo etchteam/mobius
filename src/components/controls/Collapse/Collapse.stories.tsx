@@ -6,7 +6,7 @@ import Collapse, { CollapseProps } from './Collapse';
 import Card from 'components/canvas/Card/Card';
 
 export default {
-  title: 'Controls/Collapse',
+  title: 'Components/Controls/Collapse',
   component: Collapse,
 } as Meta;
 

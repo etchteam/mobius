@@ -1,5 +1,4 @@
 import React from 'react';
-import cssVariablesTheme from '@etchteam/storybook-addon-css-variables-theme'
 import {
   Title,
   Subtitle,
@@ -12,30 +11,41 @@ import {
 import Button from 'components/controls/Button/Button'
 import Spacing from 'components/composition/Spacing/Spacing'
 import Grid from 'components/composition/Grid/Grid'
-
-import base from '!!style-loader?injectType=lazyStyleTag!css-loader!sass-loader!../src/styles/themes/default/main.scss'
-import tbor from '!!style-loader?injectType=lazyStyleTag!css-loader!sass-loader!../src/styles/themes/business-of-recycling/main.scss'
+import Badge from 'components/content/Badge/Badge'
 
 import './styles.scss'
 
 export const parameters = {
   viewMode: 'docs',
-  cssVariables: {
-    files: {
-      'Default': base,
-      'Business of recycling': tbor,
+  options: {
+    storySort: {
+      order: [
+        'Geting Started',
+        'Migration',
+        'Support',
+        'Showroom',
+        'Foundations',
+        'Components',
+        'Recipes',
+      ],
     },
-    defaultTheme: 'Default',
   },
   docs: {
     page: ({ of }) => {
       const resolvedOf = useOf(of || 'story', ['story', 'meta']);
       const name = resolvedOf.story.title?.split('/').slice(-1)[0] || 'Mobius';
 
+      const themeSupport = resolvedOf.story?.parameters?.docs?.theming
+
       return (
         <>
           <Title />
           <Subtitle />
+          {themeSupport && (
+            <Badge className="m-theme-info">
+              Theme support
+            </Badge>
+          )}
           <Description />
           <Primary />
           <Controls />
@@ -78,9 +88,5 @@ export const parameters = {
     },
   }
 }
-
-export const decorators = [
-  cssVariablesTheme,
-]
 
 export const tags = ['autodocs'];

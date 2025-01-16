@@ -4,7 +4,7 @@ import React from 'react';
 import LoadingImage from './LoadingImage';
 
 export default {
-  title: 'Content/Loading Image',
+  title: 'Components/Content/Loading Image',
   component: LoadingImage,
 } as Meta;
 

@@ -8,7 +8,7 @@ import Input from 'components/controls/Input/Input';
 import Label from 'components/controls/Label/Label';
 
 export default {
-  title: 'Content/Help text',
+  title: 'Components/Content/Help text',
   component: HelpText,
   parameters: {
     a11y: {

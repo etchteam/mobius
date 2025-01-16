@@ -4,7 +4,7 @@ import React from 'react';
 import Faq from './Faq';
 
 export default {
-  title: 'Content/Faq',
+  title: 'Components/Content/Faq',
   component: Faq,
   parameters: {
     docs: {

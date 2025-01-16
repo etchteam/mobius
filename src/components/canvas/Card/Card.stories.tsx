@@ -1,39 +1,42 @@
-import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 import React from 'react';
 
 import Card from './Card';
 
 import Grid from 'components/composition/Grid/Grid';
-import Skin, { skins } from 'components/composition/Skin/Skin';
+import { base } from 'lib/theme';
 
 export default {
-  title: 'Canvas/Card',
+  title: 'Components/Canvas/Card',
   component: Card,
-} as ComponentMeta<typeof Card>;
+  parameters: {
+    docs: {
+      theming: true,
+    },
+  },
+} as Meta<typeof Card>;
 
-const Template: ComponentStory<typeof Card> = (args) => (
+const Template: StoryFn<typeof Card> = (args) => (
   <Grid wrap>
-    {skins.map((skin) => (
-      <Grid.Item key={skin} xs={12} md={4}>
-        <Skin skin={skin}>
-          <Card {...args}>
-            <Card.Header>
-              <h2>Card title</h2>
-            </Card.Header>
-            <Card.Body>
-              Aliquam egestas mi quam, a tincidunt lectus faucibus euismod.
-              Pellentesque et metus nunc. Fusce ante arcu, mattis pretium semper
-              ac, pretium vitae velit. Donec vitae eros et arcu accumsan auctor
-              at id ipsum. Aliquam finibus, mi ac tincidunt blandit, purus elit
-              ornare dui, nec dignissim mi ante sit amet mauris. Nulla eget dui
-              in mauris tempus tincidunt a eget enim. Proin eu neque lorem. Sed
-              quis tellus magna. Nunc scelerisque nisi eget dictum laoreet.
-              Nullam aliquam et massa id euismod. Interdum et malesuada fames ac
-              ante ipsum primis in faucibus. Nulla vehicula ornare ligula nec
-              rutrum. Maecenas convallis rutrum metus sed ultricies.
-            </Card.Body>
-          </Card>
-        </Skin>
+    {base.map((theme) => (
+      <Grid.Item key={theme} xs={12} md={4}>
+        <Card className={`m-theme-${theme}`} {...args}>
+          <Card.Header>
+            <h2>Card title</h2>
+          </Card.Header>
+          <Card.Body>
+            Aliquam egestas mi quam, a tincidunt lectus faucibus euismod.
+            Pellentesque et metus nunc. Fusce ante arcu, mattis pretium semper
+            ac, pretium vitae velit. Donec vitae eros et arcu accumsan auctor at
+            id ipsum. Aliquam finibus, mi ac tincidunt blandit, purus elit
+            ornare dui, nec dignissim mi ante sit amet mauris. Nulla eget dui in
+            mauris tempus tincidunt a eget enim. Proin eu neque lorem. Sed quis
+            tellus magna. Nunc scelerisque nisi eget dictum laoreet. Nullam
+            aliquam et massa id euismod. Interdum et malesuada fames ac ante
+            ipsum primis in faucibus. Nulla vehicula ornare ligula nec rutrum.
+            Maecenas convallis rutrum metus sed ultricies.
+          </Card.Body>
+        </Card>
       </Grid.Item>
     ))}
   </Grid>
@@ -58,24 +61,22 @@ Arrow.args = {
 
 export const MutedBody = () => (
   <Grid>
-    {skins.map((skin) => (
-      <Grid.Item key={skin} xs={12} md={4} flex>
-        <Skin skin={skin}>
-          <Card border>
-            <Card.Header>
-              <h2>Card title</h2>
-            </Card.Header>
-            <Card.Body muted>
-              Aliquam egestas mi quam, a tincidunt lectus faucibus euismod.
-              Pellentesque et metus nunc. Fusce ante arcu, mattis pretium semper
-              ac, pretium vitae velit. Donec vitae eros et arcu accumsan auctor
-              at id ipsum. Aliquam finibus, mi ac tincidunt blandit, purus elit
-              ornare dui, nec dignissim mi ante sit amet mauris. Nulla eget dui
-              in mauris tempus tincidunt a eget enim. Proin eu neque lorem. Sed
-              quis tellus magna. Nunc scelerisque nisi eget dictum laoreet.
-            </Card.Body>
-          </Card>
-        </Skin>
+    {themes.map((theme) => (
+      <Grid.Item key={theme} xs={12} md={4} flex>
+        <Card border className={`m-theme-${theme}`}>
+          <Card.Header>
+            <h2>Card title</h2>
+          </Card.Header>
+          <Card.Body muted>
+            Aliquam egestas mi quam, a tincidunt lectus faucibus euismod.
+            Pellentesque et metus nunc. Fusce ante arcu, mattis pretium semper
+            ac, pretium vitae velit. Donec vitae eros et arcu accumsan auctor at
+            id ipsum. Aliquam finibus, mi ac tincidunt blandit, purus elit
+            ornare dui, nec dignissim mi ante sit amet mauris. Nulla eget dui in
+            mauris tempus tincidunt a eget enim. Proin eu neque lorem. Sed quis
+            tellus magna. Nunc scelerisque nisi eget dictum laoreet.
+          </Card.Body>
+        </Card>
       </Grid.Item>
     ))}
   </Grid>

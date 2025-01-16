@@ -6,7 +6,7 @@ import LoadingText from './LoadingText';
 import Spacing from 'components/composition/Spacing/Spacing';
 
 export default {
-  title: 'Content/Loading Text',
+  title: 'Components/Content/Loading Text',
   component: LoadingText,
   parameters: {
     a11y: {

@@ -5,11 +5,9 @@ import Icon from './Icon';
 
 import Card from 'components/canvas/Card/Card';
 import Grid from 'components/composition/Grid/Grid';
-import TextAlign from 'components/composition/TextAlign/TextAlign';
-import Text from 'components/content/Text/Text';
 
 export default {
-  title: 'Content/Icon',
+  title: 'Components/Content/Icon',
   component: Icon,
 } as Meta;
 
@@ -36,13 +34,13 @@ const Template = ({
       <Grid.Item xs={6} sm={3} md={2} flex key={icon}>
         <Card border>
           <Card.Body>
-            <TextAlign align="center">
-              <Text size="xl">
+            <div className="m-text-align-center">
+              <span className="m-text-size-xl">
                 <Icon icon={icon} type={type} />
-              </Text>
+              </span>
               <br />
-              <Text size="sm">{icon}</Text>
-            </TextAlign>
+              <span className="m-text-size-sm">{icon}</span>
+            </div>
           </Card.Body>
         </Card>
       </Grid.Item>

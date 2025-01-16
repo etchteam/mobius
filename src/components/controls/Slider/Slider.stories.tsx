@@ -7,7 +7,7 @@ import Label from '../Label/Label';
 import Slider from './Slider';
 
 export default {
-  title: 'Controls/Slider',
+  title: 'Components/Controls/Slider',
   component: Slider,
   parameters: {
     a11y: {

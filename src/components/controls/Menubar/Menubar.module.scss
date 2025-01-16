@@ -1,7 +1,7 @@
 @use '../../../styles/variables/breakpoint';
 
 .menubar {
-  background: var(--skin-background);
+  background: var(--theme-background);
 
   @media (min-width: breakpoint.$tablet) {
     align-items: center;
@@ -31,8 +31,8 @@
   }
 
   &__tab {
-    --tab-background: var(--skin-background);
-    --tab-highlight-color: var(--skin-color);
+    --tab-background: var(--theme-background);
+    --tab-highlight-color: var(--theme-color);
     --tab-highlight-width: 4px;
 
     display: block;
@@ -42,13 +42,13 @@
     position: relative;
 
     a {
-      color: var(--skin-background-muted-dark);
+      color: var(--theme-background-muted-dark);
       text-decoration: none;
       transition: background var(--transition) color var(--transition);
 
       &:hover,
       &:focus {
-        color: var(--skin-color);
+        color: var(--theme-color);
       }
 
       &:focus {
@@ -71,7 +71,7 @@
       }
 
       align-items: center;
-      color: var(--skin-background-muted-dark);
+      color: var(--theme-background-muted-dark);
       display: flex;
       justify-content: center;
       min-height: var(--spacing-thumb);

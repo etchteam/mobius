@@ -98,7 +98,7 @@
 
 @mixin label() {
   align-items: center;
-  color: var(--skin-color);
+  color: var(--theme-color);
   display: flex;
   font-size: var(--font-size-base);
   font-weight: var(--font-weight-bold);

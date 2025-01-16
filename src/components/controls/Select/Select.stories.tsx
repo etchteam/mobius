@@ -4,7 +4,7 @@ import React from 'react';
 import Select from './Select';
 
 export default {
-  title: 'Controls/Select',
+  title: 'Components/Controls/Select',
   component: Select,
   parameters: {
     a11y: {

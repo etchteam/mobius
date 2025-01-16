@@ -4,7 +4,7 @@ import React from 'react';
 import BarStack from './BarStack';
 
 export default {
-  title: 'Content/Bar Stack',
+  title: 'Components/Content/Bar Stack',
   component: BarStack,
   subcomponents: {
     BarStackItem: BarStack.Item,

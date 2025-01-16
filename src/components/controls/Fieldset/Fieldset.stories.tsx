@@ -5,7 +5,7 @@ import Fieldset from './Fieldset';
 import Legend from './Legend';
 
 export default {
-  title: 'Controls/Fieldset',
+  title: 'Components/Controls/Fieldset',
   component: Fieldset,
   subcomponents: {
     Legend,

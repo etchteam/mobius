@@ -4,7 +4,7 @@ import React from 'react';
 import TextButton from './TextButton';
 
 export default {
-  title: 'Controls/Text button',
+  title: 'Components/Controls/Text button',
   component: TextButton,
   parameters: {
     a11y: {

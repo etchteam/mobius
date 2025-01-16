@@ -1,0 +1,56 @@
+@use '../variables/font';
+@use '../variables/color';
+
+.m-text {
+  &-align {
+    &-left {
+      text-align: left;
+    }
+
+    &-center {
+      text-align: center;
+    }
+
+    &-right {
+      text-align: right;
+    }
+  }
+
+  &-color {
+    @each $name, $color in color.$colors {
+      &-#{$name} {
+        color: $color;
+      }
+    }
+  }
+
+  &-size {
+    @each $name, $size in font.$sizes {
+      &-#{$name} {
+        font-size: $size;
+      }
+    }
+  }
+
+  &-transform {
+    &-capitalize {
+      text-transform: capitalize;
+    }
+
+    &-uppercase {
+      text-transform: uppercase;
+    }
+
+    &-lowercase {
+      text-transform: lowercase;
+    }
+  }
+
+  &-weight {
+    @each $name, $weight in font.$weights {
+      &-#{$name} {
+        font-weight: $weight;
+      }
+    }
+  }
+}

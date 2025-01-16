@@ -1,6 +1,6 @@
 .faq {
-  background: var(--skin-background-muted);
-  border: 1px solid var(--skin-border-color-muted);
+  background: var(--theme-background-muted);
+  border: 1px solid var(--theme-border-color-muted);
   border-radius: var(--radius-sm);
   transition:
     background-color var(--transition),
@@ -9,8 +9,8 @@
   width: 100%;
 
   &--open {
-    background: var(--skin-background);
-    border-color: var(--skin-border-color);
+    background: var(--theme-background);
+    border-color: var(--theme-border-color);
     box-shadow: var(--shadow);
   }
 

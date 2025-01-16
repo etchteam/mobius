@@ -9,7 +9,7 @@ import FormGroup from 'components/composition/FormGroup/FormGroup';
 import Grid from 'components/composition/Grid/Grid';
 
 export default {
-  title: 'Controls/Checkbox',
+  title: 'Components/Controls/Checkbox',
   component: Checkbox,
   parameters: {
     a11y: {

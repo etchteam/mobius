@@ -9,7 +9,7 @@ import Spacing from 'components/composition/Spacing/Spacing';
 import Button from 'components/controls/Button/Button';
 
 export default {
-  title: 'Composition/Enter',
+  title: 'Components/Composition/Enter',
   component: Enter,
   parameters: {
     a11y: {

@@ -47,7 +47,6 @@
     "@commitlint/cli": "^19.4.1",
     "@commitlint/config-conventional": "^19.4.1",
     "@etchteam/eslint-config": "^2.0.12",
-    "@etchteam/storybook-addon-css-variables-theme": "^3.0.0",
     "@etchteam/stylelint-config": "^1.0.1",
     "@rollup/plugin-babel": "6.0.4",
     "@rollup/plugin-commonjs": "23.0.2",

@@ -8,8 +8,8 @@ body {
 }
 
 body {
-  background: var(--skin-background-muted);
-  color: var(--skin-color);
+  background: var(--theme-background-muted);
+  color: var(--theme-color);
   margin: 0;
   min-width: 20em;
   padding: 0;
@@ -23,5 +23,5 @@ img {
 
 hr {
   border: 0 none;
-  border-bottom: 1px solid var(--skin-border-color);
+  border-bottom: 1px solid var(--theme-border-color);
 }

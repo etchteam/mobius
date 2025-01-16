@@ -7,12 +7,15 @@
 @use 'variables/radius';
 @use 'variables/shadow';
 @use 'variables/spacing';
+@use 'variables/themes';
 @use 'variables/transition';
 
 @use 'variables/input';
 @use 'variables/button';
 
-@use 'base/skins';
 @use 'base/scaffolding';
 @use 'base/typography';
 @use 'base/forms';
+
+@use 'utilities/text';
+@use 'utilities/theme';
