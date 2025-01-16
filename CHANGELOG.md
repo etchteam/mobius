@@ -1,3 +1,10 @@
+## [8.6.0](https://github.com/etchteam/mobius/compare/v8.5.0...v8.6.0) (2025-01-16)
+
+
+### Features
+
+* money icon ([4d13623](https://github.com/etchteam/mobius/commit/4d13623abf67998fea34fe35c9deb7cba69ce420))
+
 ## [8.5.0](https://github.com/etchteam/mobius/compare/v8.4.0...v8.5.0) (2025-01-09)
 
 
