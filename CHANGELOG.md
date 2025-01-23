@@ -1,3 +1,10 @@
+## [8.7.0](https://github.com/etchteam/mobius/compare/v8.6.0...v8.7.0) (2025-01-23)
+
+
+### Features
+
+* add options for single colored box trolibox containers ([4e33722](https://github.com/etchteam/mobius/commit/4e337227455dba1c3036c7ea0ceb412a6b4eac7e))
+
 ## [8.6.0](https://github.com/etchteam/mobius/compare/v8.5.0...v8.6.0) (2025-01-16)
 
 
