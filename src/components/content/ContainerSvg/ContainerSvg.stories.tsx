@@ -75,6 +75,31 @@ export const Types = () => (
   </Grid>
 );
 
+export const Trolliboxes = () => (
+  <Grid wrap>
+    <Grid.Item xs={12} md={3}>
+      <ContainerSvg name="Trollibox" bodyColour="pink" />
+    </Grid.Item>
+    <Grid.Item xs={12} md={3}>
+      <ContainerSvg name="Trollibox Top" bodyColour="green" lidColour="red" />
+    </Grid.Item>
+    <Grid.Item xs={12} md={3}>
+      <ContainerSvg
+        name="Trollibox Middle"
+        bodyColour="green"
+        lidColour="red"
+      />
+    </Grid.Item>
+    <Grid.Item xs={12} md={3}>
+      <ContainerSvg
+        name="Trollibox Bottom"
+        bodyColour="green"
+        lidColour="red"
+      />
+    </Grid.Item>
+  </Grid>
+);
+
 export const Coloured = () => (
   <Grid wrap>
     <Grid.Item xs={12} md={3}>

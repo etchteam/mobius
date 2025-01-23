@@ -12,6 +12,73 @@ export interface ContainerSvgProps {
   readonly secondaryColour?: Colour;
 }
 
+const TrolliboxSVG = (
+  bodyClassName: string,
+  lidClassName: string,
+  secondaryClassName: string,
+  position?: number,
+) => {
+  let colors = Array(3).fill({ bodyClassName, lidClassName: bodyClassName });
+  if (position !== undefined) {
+    colors = colors.map((_, index) => ({
+      bodyClassName: index === position ? bodyClassName : secondaryClassName,
+      lidClassName: index === position ? lidClassName : secondaryClassName,
+    }));
+  }
+  return (
+    <svg
+      className={styles['container-svg']}
+      viewBox="0 0 65 96"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        className={colors[0].lidClassName}
+        d="M10.7397 2C10.7397 0.895431 11.6352 0 12.7397 0H62.7397C63.8443 0 64.7397 0.895431 64.7397 2V4H10.7397V2Z"
+        fill="#2A8CC1"
+      />
+      <path
+        className={colors[0].bodyClassName}
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M61.7397 5H13.7397L15.4983 16.2575C15.6341 18.3623 17.3808 20 19.49 20H55.9895C58.0987 20 59.8454 18.3623 59.9812 16.2575L61.7397 5ZM33.7397 9C32.6352 9 31.7397 9.89543 31.7397 11C31.7397 12.1046 32.6352 13 33.7397 13H41.7397C42.8443 13 43.7397 12.1046 43.7397 11C43.7397 9.89543 42.8443 9 41.7397 9H33.7397Z"
+        fill="#2A8CC1"
+      />
+      <path
+        className={colors[1].lidClassName}
+        d="M10.7397 24C10.7397 22.8954 11.6352 22 12.7397 22H62.7397C63.8443 22 64.7397 22.8954 64.7397 24V26H10.7397V24Z"
+        fill="#2A8CC1"
+      />
+      <path
+        className={colors[1].bodyClassName}
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M61.7397 27H13.7397L15.4983 46.2575C15.6341 48.3623 17.3808 50 19.49 50H55.9895C58.0987 50 59.8454 48.3623 59.9812 46.2575L61.7397 27ZM33.7397 31C32.6352 31 31.7397 31.8954 31.7397 33C31.7397 34.1046 32.6352 35 33.7397 35H41.7397C42.8443 35 43.7397 34.1046 43.7397 33C43.7397 31.8954 42.8443 31 41.7397 31H33.7397Z"
+        fill="#2A8CC1"
+      />
+      <path
+        className={colors[2].lidClassName}
+        d="M10.7397 54C10.7397 52.8954 11.6352 52 12.7397 52H62.7397C63.8443 52 64.7397 52.8954 64.7397 54V56H10.7397V54Z"
+        fill="#2A8CC1"
+      />
+      <path
+        className={colors[2].bodyClassName}
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M13.7397 57H61.7397L59.9812 84.2575C59.8454 86.3623 58.0987 88 55.9895 88H19.7397C19.7397 84.4916 17.933 81.4051 15.1991 79.6204L13.7397 57ZM31.7397 63C31.7397 61.8954 32.6352 61 33.7397 61H41.7397C42.8443 61 43.7397 61.8954 43.7397 63C43.7397 64.1046 42.8443 65 41.7397 65H33.7397C32.6352 65 31.7397 64.1046 31.7397 63Z"
+        fill="#2A8CC1"
+      />
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M1.01405 6.44664C0.0612497 6.99674 -0.27894 8.20635 0.247444 9.17245L3.82701 15.7422L6.95948 78.3916C7.84218 78.1367 8.77508 78 9.7399 78C10.2058 78 10.6643 78.0319 11.1132 78.0935L7.73979 14.0003L7.74008 14.0001L3.78088 7.1841C3.21951 6.21768 1.98194 5.88783 1.01405 6.44664ZM17.7406 94C18.6141 92.8372 19.2399 91.4778 19.5399 90H55.0596C53.6729 92.3982 51.0808 94 48.1299 94H17.7406Z"
+        fill="#4D6B87"
+      />
+      <circle cx="9.73975" cy="88" r="8" fill="#4D6B87" />
+    </svg>
+  );
+};
+
 function ContainerSvg({
   name,
   lidColour = 'blue',
@@ -372,58 +439,13 @@ function ContainerSvg({
         </svg>
       );
     case 'Trollibox':
-      return (
-        <svg
-          className={styles['container-svg']}
-          viewBox="0 0 65 96"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            className={bodyClassName}
-            d="M10.7397 54C10.7397 52.8954 11.6352 52 12.7397 52H62.7397C63.8443 52 64.7397 52.8954 64.7397 54V56H10.7397V54Z"
-            fill="#2A8CC1"
-          />
-          <path
-            className={bodyClassName}
-            fillRule="evenodd"
-            clipRule="evenodd"
-            d="M13.7397 57H61.7397L59.9812 84.2575C59.8454 86.3623 58.0987 88 55.9895 88H19.7397C19.7397 84.4916 17.933 81.4051 15.1991 79.6204L13.7397 57ZM31.7397 63C31.7397 61.8954 32.6352 61 33.7397 61H41.7397C42.8443 61 43.7397 61.8954 43.7397 63C43.7397 64.1046 42.8443 65 41.7397 65H33.7397C32.6352 65 31.7397 64.1046 31.7397 63Z"
-            fill="#2A8CC1"
-          />
-          <path
-            className={bodyClassName}
-            fillRule="evenodd"
-            clipRule="evenodd"
-            d="M61.7397 27H13.7397L15.4983 46.2575C15.6341 48.3623 17.3808 50 19.49 50H55.9895C58.0987 50 59.8454 48.3623 59.9812 46.2575L61.7397 27ZM33.7397 31C32.6352 31 31.7397 31.8954 31.7397 33C31.7397 34.1046 32.6352 35 33.7397 35H41.7397C42.8443 35 43.7397 34.1046 43.7397 33C43.7397 31.8954 42.8443 31 41.7397 31H33.7397Z"
-            fill="#2A8CC1"
-          />
-          <path
-            className={bodyClassName}
-            d="M10.7397 24C10.7397 22.8954 11.6352 22 12.7397 22H62.7397C63.8443 22 64.7397 22.8954 64.7397 24V26H10.7397V24Z"
-            fill="#2A8CC1"
-          />
-          <path
-            className={bodyClassName}
-            fillRule="evenodd"
-            clipRule="evenodd"
-            d="M61.7397 5H13.7397L15.4983 16.2575C15.6341 18.3623 17.3808 20 19.49 20H55.9895C58.0987 20 59.8454 18.3623 59.9812 16.2575L61.7397 5ZM33.7397 9C32.6352 9 31.7397 9.89543 31.7397 11C31.7397 12.1046 32.6352 13 33.7397 13H41.7397C42.8443 13 43.7397 12.1046 43.7397 11C43.7397 9.89543 42.8443 9 41.7397 9H33.7397Z"
-            fill="#2A8CC1"
-          />
-          <path
-            className={bodyClassName}
-            d="M10.7397 2C10.7397 0.895431 11.6352 0 12.7397 0H62.7397C63.8443 0 64.7397 0.895431 64.7397 2V4H10.7397V2Z"
-            fill="#2A8CC1"
-          />
-          <path
-            fillRule="evenodd"
-            clipRule="evenodd"
-            d="M1.01405 6.44664C0.0612497 6.99674 -0.27894 8.20635 0.247444 9.17245L3.82701 15.7422L6.95948 78.3916C7.84218 78.1367 8.77508 78 9.7399 78C10.2058 78 10.6643 78.0319 11.1132 78.0935L7.73979 14.0003L7.74008 14.0001L3.78088 7.1841C3.21951 6.21768 1.98194 5.88783 1.01405 6.44664ZM17.7406 94C18.6141 92.8372 19.2399 91.4778 19.5399 90H55.0596C53.6729 92.3982 51.0808 94 48.1299 94H17.7406Z"
-            fill="#4D6B87"
-          />
-          <circle cx="9.73975" cy="88" r="8" fill="#4D6B87" />
-        </svg>
-      );
+      return TrolliboxSVG(bodyClassName, lidClassName, secondaryClassName);
+    case 'Trollibox Top':
+      return TrolliboxSVG(bodyClassName, lidClassName, secondaryClassName, 0);
+    case 'Trollibox Middle':
+      return TrolliboxSVG(bodyClassName, lidClassName, secondaryClassName, 1);
+    case 'Trollibox Bottom':
+      return TrolliboxSVG(bodyClassName, lidClassName, secondaryClassName, 2);
     case 'Single Sack':
     case 'Single Reusable Sack':
       return (
