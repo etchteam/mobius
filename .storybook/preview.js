@@ -14,7 +14,6 @@ import Spacing from 'components/composition/Spacing/Spacing'
 import Grid from 'components/composition/Grid/Grid'
 
 import base from '!!style-loader?injectType=lazyStyleTag!css-loader!sass-loader!../src/styles/themes/default/main.scss'
-import tbor from '!!style-loader?injectType=lazyStyleTag!css-loader!sass-loader!../src/styles/themes/business-of-recycling/main.scss'
 
 import './styles.scss'
 
@@ -23,7 +22,6 @@ export const parameters = {
   cssVariables: {
     files: {
       'Default': base,
-      'Business of recycling': tbor,
     },
     defaultTheme: 'Default',
   },
