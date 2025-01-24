@@ -1,5 +1,4 @@
 import React from 'react';
-import cssVariablesTheme from '@etchteam/storybook-addon-css-variables-theme'
 import {
   Title,
   Subtitle,
@@ -13,20 +12,10 @@ import Button from 'components/controls/Button/Button'
 import Spacing from 'components/composition/Spacing/Spacing'
 import Grid from 'components/composition/Grid/Grid'
 
-import base from '!!style-loader?injectType=lazyStyleTag!css-loader!sass-loader!../src/styles/themes/default/main.scss'
-import tbor from '!!style-loader?injectType=lazyStyleTag!css-loader!sass-loader!../src/styles/themes/business-of-recycling/main.scss'
-
 import './styles.scss'
 
 export const parameters = {
   viewMode: 'docs',
-  cssVariables: {
-    files: {
-      'Default': base,
-      'Business of recycling': tbor,
-    },
-    defaultTheme: 'Default',
-  },
   docs: {
     page: ({ of }) => {
       const resolvedOf = useOf(of || 'story', ['story', 'meta']);
@@ -78,9 +67,5 @@ export const parameters = {
     },
   }
 }
-
-export const decorators = [
-  cssVariablesTheme,
-]
 
 export const tags = ['autodocs'];
