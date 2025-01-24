@@ -14,7 +14,7 @@
     }
 
     &.container-svg__body--colour-transparent {
-      stroke: color.$blue-darkest;
+      stroke: var(--color-forest);
     }
   }
 }
