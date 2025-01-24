@@ -440,11 +440,11 @@ function ContainerSvg({
       );
     case 'Trolibocs':
       return TrolibocsSVG(bodyClassName, lidClassName, secondaryClassName);
-    case 'Trolibocs Top':
+    case 'Trolibocs - Top box':
       return TrolibocsSVG(bodyClassName, lidClassName, secondaryClassName, 0);
-    case 'Trolibocs Middle':
+    case 'Trolibocs - Middle box':
       return TrolibocsSVG(bodyClassName, lidClassName, secondaryClassName, 1);
-    case 'Trolibocs Bottom':
+    case 'Trolibocs - Bottom box':
       return TrolibocsSVG(bodyClassName, lidClassName, secondaryClassName, 2);
     case 'Single Sack':
     case 'Single Reusable Sack':

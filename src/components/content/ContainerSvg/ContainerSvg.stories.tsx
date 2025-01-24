@@ -81,18 +81,22 @@ export const Trolibocs = () => (
       <ContainerSvg name="Trolibocs" bodyColour="pink" />
     </Grid.Item>
     <Grid.Item xs={12} md={3}>
-      <ContainerSvg name="Trolibocs Top" bodyColour="green" lidColour="red" />
-    </Grid.Item>
-    <Grid.Item xs={12} md={3}>
       <ContainerSvg
-        name="Trolibocs Middle"
+        name="Trolibocs - Top box"
         bodyColour="green"
         lidColour="red"
       />
     </Grid.Item>
     <Grid.Item xs={12} md={3}>
       <ContainerSvg
-        name="Trolibocs Bottom"
+        name="Trolibocs - Middle box"
+        bodyColour="green"
+        lidColour="red"
+      />
+    </Grid.Item>
+    <Grid.Item xs={12} md={3}>
+      <ContainerSvg
+        name="Trolibocs - Bottom box"
         bodyColour="green"
         lidColour="red"
       />
