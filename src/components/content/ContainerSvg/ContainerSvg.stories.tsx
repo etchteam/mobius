@@ -64,7 +64,7 @@ export const Types = () => (
       <ContainerSvg name="Single Carrier Bag" />
     </Grid.Item>
     <Grid.Item xs={12} md={3}>
-      <ContainerSvg name="Trollibox" />
+      <ContainerSvg name="Trolibocs" />
     </Grid.Item>
     <Grid.Item xs={12} md={3}>
       <ContainerSvg name="Bundle" />
@@ -75,24 +75,24 @@ export const Types = () => (
   </Grid>
 );
 
-export const Trolliboxes = () => (
+export const Trolibocs = () => (
   <Grid wrap>
     <Grid.Item xs={12} md={3}>
-      <ContainerSvg name="Trollibox" bodyColour="pink" />
+      <ContainerSvg name="Trolibocs" bodyColour="pink" />
     </Grid.Item>
     <Grid.Item xs={12} md={3}>
-      <ContainerSvg name="Trollibox Top" bodyColour="green" lidColour="red" />
+      <ContainerSvg name="Trolibocs Top" bodyColour="green" lidColour="red" />
     </Grid.Item>
     <Grid.Item xs={12} md={3}>
       <ContainerSvg
-        name="Trollibox Middle"
+        name="Trolibocs Middle"
         bodyColour="green"
         lidColour="red"
       />
     </Grid.Item>
     <Grid.Item xs={12} md={3}>
       <ContainerSvg
-        name="Trollibox Bottom"
+        name="Trolibocs Bottom"
         bodyColour="green"
         lidColour="red"
       />
