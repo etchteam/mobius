@@ -1,3 +1,10 @@
+## [8.8.0](https://github.com/etchteam/mobius/compare/v8.7.0...v8.8.0) (2025-01-24)
+
+
+### Features
+
+* remove BoR theme ([3b3369e](https://github.com/etchteam/mobius/commit/3b3369ef4bb9b920fa0ad24c24c080e8c2e203b3))
+
 ## [8.7.0](https://github.com/etchteam/mobius/compare/v8.6.0...v8.7.0) (2025-01-23)
 
 
