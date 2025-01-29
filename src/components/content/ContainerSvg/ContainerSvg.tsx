@@ -12,7 +12,7 @@ export interface ContainerSvgProps {
   readonly secondaryColour?: Colour;
 }
 
-const TrolliboxSVG = (
+const TrolibocsSVG = (
   bodyClassName: string,
   lidClassName: string,
   secondaryClassName: string,
@@ -438,14 +438,14 @@ function ContainerSvg({
           />
         </svg>
       );
-    case 'Trollibox':
-      return TrolliboxSVG(bodyClassName, lidClassName, secondaryClassName);
-    case 'Trollibox Top':
-      return TrolliboxSVG(bodyClassName, lidClassName, secondaryClassName, 0);
-    case 'Trollibox Middle':
-      return TrolliboxSVG(bodyClassName, lidClassName, secondaryClassName, 1);
-    case 'Trollibox Bottom':
-      return TrolliboxSVG(bodyClassName, lidClassName, secondaryClassName, 2);
+    case 'Trolibocs':
+      return TrolibocsSVG(bodyClassName, lidClassName, secondaryClassName);
+    case 'Trolibocs - Top box':
+      return TrolibocsSVG(bodyClassName, lidClassName, secondaryClassName, 0);
+    case 'Trolibocs - Middle box':
+      return TrolibocsSVG(bodyClassName, lidClassName, secondaryClassName, 1);
+    case 'Trolibocs - Bottom box':
+      return TrolibocsSVG(bodyClassName, lidClassName, secondaryClassName, 2);
     case 'Single Sack':
     case 'Single Reusable Sack':
       return (
