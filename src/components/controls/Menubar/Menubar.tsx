@@ -42,14 +42,17 @@ const MenubarBack = ({ children }: { readonly children?: React.ReactNode }) => (
 const Menubar = ({
   children,
   transparent,
+  ...props
 }: {
   readonly children?: React.ReactNode;
   readonly transparent?: boolean;
+  [key: string]: unknown;
 }) => (
   <nav
     className={classNames(styles.menubar, {
       [styles['menubar--transparent']]: transparent,
     })}
+    {...props}
   >
     {children}
   </nav>
