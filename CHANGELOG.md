@@ -1,3 +1,16 @@
+## [9.1.0](https://github.com/etchteam/mobius/compare/v9.0.0...v9.1.0) (2025-01-29)
+
+
+### Features
+
+* transparent menubar variant ([fd7fcf3](https://github.com/etchteam/mobius/commit/fd7fcf3045246f23f5f9fadfe8026b3e33f69825))
+
+
+### Bug Fixes
+
+* broken skins ([b191f92](https://github.com/etchteam/mobius/commit/b191f92699e17abd62f51345d3f1192fc88baf8b))
+* menubar styles with skins ([c56869a](https://github.com/etchteam/mobius/commit/c56869a81defc162d93c8a12dd8c25af017c619b))
+
 ## [9.0.0](https://github.com/etchteam/mobius/compare/v8.8.0...v9.0.0) (2025-01-29)
 
 

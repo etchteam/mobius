@@ -1,6 +1,6 @@
 {
   "name": "@etchteam/mobius",
-  "version": "9.0.0",
+  "version": "9.1.0",
   "description": "WRAP's design system",
   "scripts": {
     "build": "node ./scripts/build.js",
