@@ -42,7 +42,7 @@
     position: relative;
 
     a {
-      color: var(--skin-background-muted-dark);
+      color: color-mix(in srgb, var(--skin-color) 75%, transparent 25%);
       text-decoration: none;
       transition: background var(--transition) color var(--transition);
 
@@ -71,7 +71,6 @@
       }
 
       align-items: center;
-      color: var(--skin-background-muted-dark);
       display: flex;
       justify-content: center;
       min-height: var(--spacing-thumb);

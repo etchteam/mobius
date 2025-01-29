@@ -4,6 +4,7 @@ import React from 'react';
 
 import Menubar from './Menubar';
 
+import Skin, { skins, emphasisSkins } from 'components/composition/Skin/Skin';
 import Icon from 'components/content/Icon/Icon';
 
 export default {
@@ -27,26 +28,38 @@ export default {
       },
     },
   },
+  argTypes: {
+    skin: {
+      control: 'select',
+      options: [...skins, ...emphasisSkins],
+    },
+  },
 } as Meta;
 
 export const FourTabs: StoryFn = (args) => (
-  <Menubar {...args}>
-    <Menubar.Tabs>
-      <Menubar.Tab completed>
-        <a href="#">Service</a>
-      </Menubar.Tab>
-      <Menubar.Tab active>
-        <a href="#">Economic</a>
-      </Menubar.Tab>
-      <Menubar.Tab>
-        <a href="#">Environmental</a>
-      </Menubar.Tab>
-      <Menubar.Tab disabled>
-        <span>Technical</span>
-      </Menubar.Tab>
-    </Menubar.Tabs>
-  </Menubar>
+  <Skin skin={args.skin}>
+    <Menubar {...args}>
+      <Menubar.Tabs>
+        <Menubar.Tab completed>
+          <a href="#">Service</a>
+        </Menubar.Tab>
+        <Menubar.Tab active>
+          <a href="#">Economic</a>
+        </Menubar.Tab>
+        <Menubar.Tab>
+          <a href="#">Environmental</a>
+        </Menubar.Tab>
+        <Menubar.Tab disabled>
+          <span>Technical</span>
+        </Menubar.Tab>
+      </Menubar.Tabs>
+    </Menubar>
+  </Skin>
 );
+
+FourTabs.args = {
+  skin: 'light',
+};
 
 export const TwoTabs: StoryFn = () => (
   <Menubar>
