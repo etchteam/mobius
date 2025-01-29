@@ -1,7 +1,13 @@
 @use '../../../styles/variables/breakpoint';
 
 .menubar {
-  background: var(--skin-background);
+  --tab-background: var(--skin-background);
+  --tab-background-active: var(--input-background-disabled);
+  --tab-color-active: var(--color-body);
+  --tab-highlight-color: var(--skin-color);
+  --tab-highlight-width: 4px;
+
+  background: var(--tab-background);
 
   @media (min-width: breakpoint.$tablet) {
     align-items: center;
@@ -31,10 +37,6 @@
   }
 
   &__tab {
-    --tab-background: var(--skin-background);
-    --tab-highlight-color: var(--skin-color);
-    --tab-highlight-width: 4px;
-
     display: block;
     font-size: var(--font-size-sm);
     font-weight: var(--font-weight-bold);
@@ -83,11 +85,11 @@
         opacity: 1;
       }
 
-      background: var(--input-background-disabled);
-      color: var(--color-body);
+      background: var(--tab-background-active);
+      color: var(--tab-color-active);
 
       a {
-        color: var(--color-body);
+        color: var(--tab-color-active);
       }
     }
 
@@ -115,5 +117,11 @@
       padding: var(--spacing-md);
       text-decoration: none;
     }
+  }
+
+  &--transparent {
+    --tab-background: transparent;
+    --tab-background-active: var(--skin-background);
+    --tab-color-active: car(--skin-color);
   }
 }

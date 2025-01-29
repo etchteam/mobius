@@ -4,6 +4,7 @@ import React from 'react';
 
 import Menubar from './Menubar';
 
+import Card from 'components/canvas/Card/Card';
 import Skin, { skins, emphasisSkins } from 'components/composition/Skin/Skin';
 import Icon from 'components/content/Icon/Icon';
 
@@ -90,4 +91,29 @@ export const WithBackButton = () => (
       </Menubar.Tab>
     </Menubar.Tabs>
   </Menubar>
+);
+
+export const Transparent: StoryFn = () => (
+  <Skin skin="light">
+    <Card muted>
+      <Card.Body>
+        <Menubar transparent>
+          <Menubar.Tabs>
+            <Menubar.Tab completed>
+              <a href="#">Waste</a>
+            </Menubar.Tab>
+            <Menubar.Tab active>
+              <a href="#">Containers</a>
+            </Menubar.Tab>
+            <Menubar.Tab>
+              <a href="#">Cost</a>
+            </Menubar.Tab>
+            <Menubar.Tab disabled>
+              <span>Results</span>
+            </Menubar.Tab>
+          </Menubar.Tabs>
+        </Menubar>
+      </Card.Body>
+    </Card>
+  </Skin>
 );
