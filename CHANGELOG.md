@@ -1,3 +1,16 @@
+## [9.0.0](https://github.com/etchteam/mobius/compare/v8.8.0...v9.0.0) (2025-01-29)
+
+
+### ⚠ BREAKING CHANGES
+
+* update format of container name props for trolibocs
+* update all trolibox container prop from trollibox to trolibocs
+
+### Features
+
+* update all trolibox container prop from trollibox to trolibocs ([dae1931](https://github.com/etchteam/mobius/commit/dae1931ec8bb1d0f1112dcba948560e3fc09d970))
+* update format of container name props for trolibocs ([bccd4ea](https://github.com/etchteam/mobius/commit/bccd4ea63c2726412f483503d569ddb45aa53b67))
+
 ## [8.8.0](https://github.com/etchteam/mobius/compare/v8.7.0...v8.8.0) (2025-01-24)
 
 
