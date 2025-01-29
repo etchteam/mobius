@@ -1,6 +1,10 @@
-:root {
-  $skins: light, dark, info, attention, positive, negative, neutral;
+@use '../mixins/skin';
 
+$skins: light, dark, info, attention, neutral, positive, negative;
+
+@include skin.create-skins($skins);
+
+:root {
   @each $skin in $skins {
     --skin-background-#{$skin}: var(--mobius-skin-background-#{$skin});
     --skin-background-muted-#{$skin}: var(
