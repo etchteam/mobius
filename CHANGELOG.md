@@ -1,3 +1,15 @@
+## [9.2.0](https://github.com/etchteam/mobius/compare/v9.1.0...v9.2.0) (2025-01-29)
+
+
+### Features
+
+* allow additional props on menubar for a11y ([7798b2d](https://github.com/etchteam/mobius/commit/7798b2d6e7a0244c3a6e0390cdb4bb2ad9a5dadd))
+
+
+### Bug Fixes
+
+* centre menubar tabs for better small screen layout ([d75e322](https://github.com/etchteam/mobius/commit/d75e3229a6c295b91d62f7e4a30e99aac39b9951))
+
 ## [9.1.0](https://github.com/etchteam/mobius/compare/v9.0.0...v9.1.0) (2025-01-29)
 
 
