@@ -62,5 +62,8 @@ module.exports = {
       ></script>
     ` : ''}
   `),
-  docs: {}
+  docs: {},
+  core: {
+    disableTelemetry: true,
+  },
 }
