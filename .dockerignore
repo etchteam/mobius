@@ -1,0 +1,19 @@
+# Ignore everything
+*
+
+# Allow files and directories
+!.babelrc
+!.env
+!.storybook
+!example
+!package-lock.json
+!package.json
+!scripts
+!src
+!tsconfig.json
+
+# Ignore unnecessary files inside allowed directories
+**/*~
+**/*.log
+**/.DS_Store
+**/Thumbs.db
