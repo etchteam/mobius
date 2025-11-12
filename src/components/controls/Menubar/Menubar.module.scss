@@ -45,9 +45,16 @@
     position: relative;
 
     a {
+      align-items: center;
       color: color-mix(in srgb, var(--skin-color) 75%, transparent 25%);
+      display: flex;
+      height: 100%;
+      justify-content: center;
+      padding: var(--spacing-md);
+      text-align: center;
       text-decoration: none;
       transition: background var(--transition) color var(--transition);
+      width: 100%;
 
       &:hover,
       &:focus {
@@ -75,10 +82,16 @@
 
       align-items: center;
       display: flex;
+      height: 100%;
       justify-content: center;
       min-height: var(--spacing-thumb);
       padding: var(--spacing-md);
       text-align: center;
+
+      &:has(> a) {
+        // remove padding to allow anchor to fill entire tab
+        padding: 0;
+      }
     }
 
     &--active &-inner {
