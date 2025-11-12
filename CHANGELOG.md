@@ -1,3 +1,11 @@
+## [9.3.0](https://github.com/etchteam/mobius/compare/v9.2.0...v9.3.0) (2025-11-12)
+
+
+### Features
+
+* **Menubar:** make anchors fill the entire tab ([3b12971](https://github.com/etchteam/mobius/commit/3b1297143af6c7b67c5330104909827a8b5afe27))
+* **Menubar:** make tabs fill the whole height of the menubar ([9c31dca](https://github.com/etchteam/mobius/commit/9c31dcaed20efbadf15801a9659386b49e68e6e0))
+
 ## [9.2.0](https://github.com/etchteam/mobius/compare/v9.1.0...v9.2.0) (2025-01-29)
 
 
