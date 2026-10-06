@@ -438,6 +438,44 @@ function ContainerSvg({
           />
         </svg>
       );
+    case 'Householder Provided Bag With Box Collection':
+      return (
+        <svg
+          className={styles['container-svg']}
+          viewBox="0 0 100 96"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g transform="translate(-64 0)">
+            <path
+              className={secondaryClassName}
+              fillRule="evenodd"
+              clipRule="evenodd"
+              d="M115 63H67L68.7586 90.2575C68.8943 92.3623 70.6411 94 72.7503 94H109.25C111.359 94 113.106 92.3623 113.241 90.2575L115 63ZM87 67C85.8954 67 85 67.8954 85 69C85 70.1046 85.8954 71 87 71H95C96.1046 71 97 70.1046 97 69C97 67.8954 96.1046 67 95 67H87Z"
+              fill="#D7E7F5"
+            />
+            <path
+              className={secondaryClassName}
+              d="M64 60C64 58.8954 64.8954 58 66 58H116C117.105 58 118 58.8954 118 60V62H64V60Z"
+              fill="#D7E7F5"
+            />
+          </g>
+          <g transform="translate(-4 0)">
+            <path
+              className={bodyClassName}
+              d="M79 59C77.8954 59 77 59.8954 77 61V63H79V62C79 61.4477 79.4477 61 80 61L88 61C88.5523 61 89 61.4477 89 62V63H91V61C91 59.8954 90.1046 59 89 59H79Z"
+              fill="#2A8CC1"
+            />
+            <path
+              className={bodyClassName}
+              fillRule="evenodd"
+              clipRule="evenodd"
+              d="M68 78.0002L64 63.0004L84.6452 65.0004L104 63.0004L100 79.0002L104 94.0002H64L68 78.0002ZM89 75C90.1046 75 91 74.1046 91 73V67C89.8954 67 89 67.8954 89 69V72C89 72.5523 88.5523 73 88 73H80C79.4477 73 79 72.5523 79 72L79 69C79 67.8954 78.1046 67 77 67V73C77 74.1046 77.8954 75 79 75L89 75Z"
+              fill="#2A8CC1"
+            />
+          </g>
+        </svg>
+      );
     case 'Trolibocs':
       return TrolibocsSVG(bodyClassName, lidClassName, secondaryClassName);
     case 'Trolibocs - Top box':

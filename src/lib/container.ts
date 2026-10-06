@@ -44,6 +44,7 @@ export type Name =
   | 'Non-Reusable Sack'
   | 'Householder Provides'
   | 'Householder Provided Carrier Bag'
+  | 'Householder Provided Bag With Box Collection'
   | 'Trolibocs'
   | 'Trolibocs - Top box'
   | 'Trolibocs - Middle box'
