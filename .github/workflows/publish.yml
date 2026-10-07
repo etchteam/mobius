@@ -27,15 +27,14 @@ jobs:
           registry-url: https://registry.npmjs.org
           cache: npm
       - run: npm ci
+      - run: npm audit signatures
       - run: npm run build
       - uses: cycjimmy/semantic-release-action@b12c8f6015dc215fe37bc154d4ad456dd3833c90
         with:
           semantic_version: 25.0.1
           branch: main
-          extends: |
+          extra_plugins: |
             @semantic-release/git@10.0.1
             @semantic-release/changelog@6.0.3
-            @commitlint/cli@20.3.1
-            @commitlint/config-conventional@20.3.1
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
