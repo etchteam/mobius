@@ -1,3 +1,10 @@
+## [9.4.0](https://github.com/etchteam/mobius/compare/v9.3.0...v9.4.0) (2026-10-07)
+
+
+### Features
+
+* new container svg for bag with box collection ([29ffe2a](https://github.com/etchteam/mobius/commit/29ffe2ab9c30459916e7c3f03855e2226c62a471))
+
 ## [9.3.0](https://github.com/etchteam/mobius/compare/v9.2.0...v9.3.0) (2025-11-12)
 
 
