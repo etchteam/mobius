@@ -1,3 +1,16 @@
+## <small>9.4.1 (2026-10-23)</small>
+
+* Merge pull request #334 from etchteam/mergify/configuration-deprecated-update ([6042157](https://github.com/etchteam/mobius/commit/6042157)), closes [#334](https://github.com/etchteam/mobius/issues/334)
+* Merge pull request #353 from etchteam/chore/dependabot-bundle ([2e22eb6](https://github.com/etchteam/mobius/commit/2e22eb6)), closes [#353](https://github.com/etchteam/mobius/issues/353)
+* Merge pull request #357 from etchteam/dependabot/npm_and_yarn/follow-redirects-1.16.1 ([8bff529](https://github.com/etchteam/mobius/commit/8bff529)), closes [#357](https://github.com/etchteam/mobius/issues/357)
+* Merge pull request #358 from etchteam/fix/checkbox-ref-unmount ([9712883](https://github.com/etchteam/mobius/commit/9712883)), closes [#358](https://github.com/etchteam/mobius/issues/358)
+* fix: pass null to combined refs on unmount ([8cba5a4](https://github.com/etchteam/mobius/commit/8cba5a4))
+* chore: bump dependabot dependencies ([f95b5ac](https://github.com/etchteam/mobius/commit/f95b5ac))
+* chore: bump follow-redirects from 1.16.0 to 1.16.1 ([4802969](https://github.com/etchteam/mobius/commit/4802969))
+* chore: keep @svgr/webpack on 5.5.0 ([fc2f63c](https://github.com/etchteam/mobius/commit/fc2f63c))
+* chore: restore stylelint typescript peer in lockfile ([391436c](https://github.com/etchteam/mobius/commit/391436c))
+* ci(mergify): upgrade configuration to current format ([08a419d](https://github.com/etchteam/mobius/commit/08a419d))
+
 ## 9.4.0 (2026-10-07)
 
 * Merge pull request #317 from etchteam/dependabot/npm_and_yarn/multi-75e6bc5210 ([d22e98c](https://github.com/etchteam/mobius/commit/d22e98c)), closes [#317](https://github.com/etchteam/mobius/issues/317)
